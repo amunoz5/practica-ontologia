@@ -70,6 +70,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Deporte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Deporte"/>
+    
+
+
     <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioAuxiliar -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioAuxiliar">
@@ -147,6 +153,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Organizacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Organizacion"/>
+    
+
+
     <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Pista -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Pista">
@@ -162,6 +174,29 @@
     <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Sala">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivoConvencional"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Vaso"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Servicio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Servicio"/>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#ServicioBono -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#ServicioBono">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Servicio"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#ServicioIndividual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#ServicioIndividual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#ServicioIndividual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Servicio"/>
     </owl:Class>
     
 
