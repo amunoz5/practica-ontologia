@@ -7,6 +7,170 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#AreaAcuatica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#AreaAcuatica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#AreaDeActividadDeportiva"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#AreaAerea"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#AreaTerrestre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#AreaAerea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#AreaAerea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#AreaDeActividadDeportiva"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#AreaTerrestre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#AreaDeActividadDeportiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#AreaDeActividadDeportiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivo"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivoConvencional"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivoSingular"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#AreaTerrestre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#AreaTerrestre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#AreaDeActividadDeportiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Campo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Campo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivoConvencional"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioLongitudinal"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Pista"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Sala"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Vaso"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioAuxiliar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioAuxiliar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#InstalacionDeportiva"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioComplementario"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioComplementario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioComplementario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#InstalacionDeportiva"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioComplementarioEspecifico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioComplementarioEspecifico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioComplementario"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioComplementarioGeneral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioComplementarioGeneral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioComplementarioGeneral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioComplementario"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#InstalacionDeportiva"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivoConvencional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivoConvencional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivoSingular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivoSingular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioLongitudinal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioLongitudinal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivoConvencional"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Pista"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Sala"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Vaso"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#InstalacionDeportiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#InstalacionDeportiva"/>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Pista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Pista">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivoConvencional"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Sala"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Vaso"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Sala -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Sala">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivoConvencional"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Vaso"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Vaso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#Vaso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#EspacioDeportivoConvencional"/>
+    </owl:Class>
 </rdf:RDF>
 
 
