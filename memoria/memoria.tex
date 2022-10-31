@@ -13,6 +13,7 @@
 \usepackage{float} % para que las figuras no floten
 \usepackage{subcaption}
 \usepackage{soul} % para el highlight \hl
+\usepackage{pdfpages} % para pegar otro pdf dentro de este
 
 \textheight = 24 cm
 \textwidth = 17 cm
@@ -68,11 +69,19 @@
 		\caption{Sección correspondiente a los recursos no ontológicos en la ontología.}
 	\end{figure}
 	
-	
 	Es importante señalar que la estructura taxonómica del documento descrito exige desambiguar entre las relaciones "sub-clase de" (\textit{sc} en el diagrama) y "parte de" (\textit{PoF} en el diagrama).
 	
 	\section{Patrones en la ontología}
 	% Search for some ontology design patterns in the ontology design pattern portal that could be reused in your development.
+	
+	Para facilitar el diseño de los servicios ofrecidos por la organización en una instalación deportiva, se reutilizó el patrón de una relación N-aria según lo visto en clase. Este patrón se utiliza para representar una relación N-aria en el que todos los elementos tienen la misma importancia. Para representar esta relación N-aria se crea una clase, en nuestra ontología la clase \textit{ServicioOfrecido}, a la que asociar todos los atributos de la relación.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{include/patron.png}
+		\caption{Sección correspondiente a los patrones utilizados en el diseño de la ontología.}
+	\end{figure}
+	
 	
 	\section{Modelo conceptual}
 	% Build a conceptual model that integrates outcomes from the previous sections (c,d,e). This is the most important part of the work you are doing. Try to use:
@@ -94,6 +103,10 @@
 	
 	\section{Documentación de la ontología}
 	% Document the ontology with Widoco and use Ontoology if required
+		
+	\cite{widoco}
+	
+	%\includepdf[pages=-]{include/documentation-widoco.pdf}
 	
 	\section{Conclusiones}
 	
