@@ -24,8 +24,11 @@
     <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#associatedTo -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#associatedTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario"/>
-        <rdfs:range rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"/>
+        <rdfs:label xml:lang="en">An EspacioComplementario (complementary space) is associated to an EspacioDeportivo (sports space)</rdfs:label>
+        <rdfs:label xml:lang="es">Un EspacioComplementario está asociado a un EspacioDeportivo</rdfs:label>
     </owl:ObjectProperty>
     
 
