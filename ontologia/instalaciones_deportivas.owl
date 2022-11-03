@@ -44,6 +44,14 @@
     
 
 
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Alquiler_de_pista_de_padel -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Alquiler_de_pista_de_padel">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica -->
 
     <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica">
@@ -81,6 +89,22 @@
     
 
 
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_de_tenis -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_de_tenis">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_zumba -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_zumba">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono"/>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo -->
 
     <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo">
@@ -93,9 +117,29 @@
     
 
 
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Clase_individual_de_baloncesto -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Clase_individual_de_baloncesto">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente"/>
+    
+
+
     <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte -->
 
     <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte"/>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Entrenador -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Entrenador"/>
     
 
 
@@ -176,6 +220,12 @@
     
 
 
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Monitor -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Monitor"/>
+    
+
+
     <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion -->
 
     <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion"/>
@@ -220,6 +270,28 @@
 
     <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual">
         <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido"/>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Suscripcion_mensual_sala_musculacion -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Suscripcion_mensual_sala_musculacion">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vale_de_24_horas_sala_musculación -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vale_de_24_horas_sala_musculación">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual"/>
     </owl:Class>
     
 
