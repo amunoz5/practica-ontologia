@@ -1,0 +1,27 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioEspecifico" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioGeneral" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vaso" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoSingular" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo" "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario" ; /*classes style*/
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vaso" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vaso" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoSingular" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vaso" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vaso" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioEspecifico" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioGeneral" [ label = "owl:disjointWith" ];
+	"http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario" -> "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo" [ label = "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#associatedTo" ];
+
+}
