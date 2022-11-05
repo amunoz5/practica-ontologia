@@ -1,0 +1,1263 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10#"
+     xml:base="http://www.semanticweb.org/debark/ontologies/2022/9/untitled-ontology-10"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas">
+        <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#associatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#associatedTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"/>
+        <rdfs:label xml:lang="en">An EspacioComplementario (complementary space) is associated to an EspacioDeportivo (sports space)</rdfs:label>
+        <rdfs:label xml:lang="es">Un EspacioComplementario está asociado a un EspacioDeportivo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasDateTimeDescription -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#hasDateTimeDescription">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasTemporalDuration -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#hasTemporalDuration">
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasAddress">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <rdfs:comment xml:lang="en">To specify the components of the delivery address for the object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">has address</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasEmail -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasEmail">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Email"/>
+        <rdfs:comment xml:lang="en">To specify the electronic mail address for communication with the object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">has email</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasOrganizationName -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasOrganizationName">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Name"/>
+        <rdfs:comment xml:lang="en">Used to support property parameters for the organization name data property</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">has organization name</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#hasTelephone -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasTelephone">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2006/vcard/ns#Tel"/>
+        <rdfs:comment xml:lang="en">To specify the telephone number for telephony communication with the object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">has telephone</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/action -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/action">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Rule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Has Action</rdfs:label>
+        <skos:definition xml:lang="en">The operation relating to the Asset for which the Rule is being subjected.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/assigneeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/assigneeOf">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Party"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Rule"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Assignee Of</rdfs:label>
+        <skos:definition xml:lang="en">Identifies an ODRL Policy for which the identified Party undertakes the assignee functional role.</skos:definition>
+        <skos:note xml:lang="en">When assigneeOf has been asserted between a metadata expression and an ODRL Policy, the Party being identified MUST be inferred to undertake the assignee functional role of all the Rules of that Policy.</skos:note>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/constraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/constraint">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Rule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Constraint"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Has Constraint</rdfs:label>
+        <skos:definition xml:lang="en">Constraint applied to a Rule</skos:definition>
+        <skos:note xml:lang="en">Constraints on Rules are used to determine if a rule is Active or not. Example: the Permission rule is only active during the year 2018.</skos:note>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/relation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/relation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/target -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/odrl/2/target">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/odrl/2/relation"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/odrl/2/Rule"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Asset"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Target</rdfs:label>
+        <skos:definition xml:lang="en">The target property indicates the Asset that is the primary subject to which the Rule action directly applies.</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/org#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#hasMember">
+        <owl:inverseOf rdf:resource="http://www.w3.org/ns/org#memberOf"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Membership"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment xml:lang="it">Indica una persona che è membro della data Organization. È l&apos;inverso di `org:memberOf` ed è fornita per  compatibilità con `foaf:member`.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates a person who is a member of the subject Organization. Inverse of `org:memberOf`, see that property for further clarification. Provided for compatibility with `foaf:member`.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Indique une personne membre de l&apos;Organisation sujet. Inverse de `org:memberOf`, voyez la description de cette propriété pour plus de précisions. Fourni pour la compatibilité avec `foaf:member`.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Persona que es miembro de la organización en cuestión. Es la relación inversa de `org:memberOf`, véase la descripción de esa propiedad para más detalles. Se prevé compatibilidad con foaf:member`.</rdfs:comment>
+        <rdfs:comment xml:lang="ja">対象組織のメンバーであるエージェント（人または他の組織）を示します。org:memberOfの逆。さらに明確な説明については、そのプロパティーを参照してください。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org"/>
+        <rdfs:label xml:lang="it">ha membro</rdfs:label>
+        <rdfs:label xml:lang="en">has member</rdfs:label>
+        <rdfs:label xml:lang="fr">possède un membre</rdfs:label>
+        <rdfs:label xml:lang="es">tiene miembro</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/org#memberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#memberOf">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/org#Membership"/>
+        <rdfs:comment xml:lang="it">Indica che una persona è membro di una Organization senza una precisa indicazione sulla natura di questa appartenenza e sul suo ruolo. Si noti che la scelta del nome di questa proprietà non intende limitarla alla sola  rappresentazione formalmente di un&apos;appartenenza. La proprietà può coprire anche altri coinvolgimenti nell&apos;organizzazione. Questa proprietà può essere specializzata per indicare ruoli all&apos;interno organizzazione o relazioni di diverse tipologie. Ha `org:hasmember` come proprietà inversa opzionale.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates that a person is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership arrangements, it is also indended to cover related concepts such as affilliation or other involvement in the organization. Extensions can specialize this relationship to indicate particular roles within the organization or more nuanced relationships to the organization. Has an optional inverse, `org:hasmember`.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Indique qu&apos;une personne est membre de l&apos;Organisation sans précision sur la nature de cet engagement ou du rôle joué. Notez que le choix du nom de cette propriété ne vise pas à la limiter aux seuls engagements formels, elle peut également couvrir des concepts reliés comme l&apos;affiliation ou le bénévolat. Des extensions peuvent spécialiser cette relation pour indiquer des rôles particuliers au sein de l&apos;Organisation or des relations plus nuancées avec elle. Possède une propriété inverse optionnelle, `org:hasmember`.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Persona que pertenece a la organización o es miembro de la misma, sin que conste la naturaleza de dicha pertenencia o el papel que desempeña. Se debe tener en cuenta que la elección de una denominación para esta propiedad no significa que la propiedad esté limitada a ciertos tipos de pertenencia formales, sino que pretende cubrir conceptos relacionados como el de afiliación u otras formas de participación en la organización. Se puede hacer uso de extensiones para especializar esta relación de forma que incluya tipos específicos de pertenencia a las organizaciones o relaciones especiales con la organización.</rdfs:comment>
+        <rdfs:comment xml:lang="ja">エージェント（人または他の組織）が組織のメンバーであることを示します。ただし、その構成員の本質や担う役割は示しません。プロパティー名の選択は、プロパティーを正式な構成員配置のみに制限することが目的ではないことに注意してください。所属や組織へのその他の関与などの関連する概念をカバーすることも意図されています。拡張により、この関係を特殊化し、組織内の特定の役割やよりニュアンスを含んだ組織との関係を示すことができます。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org"/>
+        <rdfs:label xml:lang="es">es miembro de</rdfs:label>
+        <rdfs:label xml:lang="en">member of</rdfs:label>
+        <rdfs:label xml:lang="fr">membre de</rdfs:label>
+        <rdfs:label xml:lang="it">membro di</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/org#organization -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#organization">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Membership"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:comment xml:lang="it">Indica l&apos;Organization in cui l&apos;Agent è un membro.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates Organization in which the Agent is a member.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Indique l&apos;Organization dont l&apos;agent est membre.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Organización a la que pertenece el agente en calidad de miembro.</rdfs:comment>
+        <rdfs:comment xml:lang="ja">エージェントがメンバーである組織を示します。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org"/>
+        <rdfs:label xml:lang="es">es condición de miembro sobre organización</rdfs:label>
+        <rdfs:label xml:lang="fr">organisation</rdfs:label>
+        <rdfs:label xml:lang="en">organization</rdfs:label>
+        <rdfs:label xml:lang="it">organizzazione</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/org#role -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#role">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Membership"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/org#Role"/>
+        <rdfs:comment xml:lang="es">Actividad que el agente desempeña en una relación de pertenencia a una organización.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Indica il Role che un Agent ricopre in una relazione di Membership con una Organization</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the Role that the Agent plays in a Membership relationship with an Organization.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Indique le Rôle de l&apos;Agent dans son Engagement avec l&apos;Organisation.</rdfs:comment>
+        <rdfs:comment xml:lang="ja">エージェントが組織との構成員関係において担う役割を示します。ポストの保持者が担う役割を示すためにorg:Postで用いることもできます。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org"/>
+        <rdfs:label xml:lang="es">desempeña la actividad de</rdfs:label>
+        <rdfs:label xml:lang="en">role</rdfs:label>
+        <rdfs:label xml:lang="it">ruolo</rdfs:label>
+        <rdfs:label xml:lang="fr">rôle</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#consumes -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#consumes">
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido"/>
+        <rdfs:label xml:lang="es">Consume</rdfs:label>
+        <rdfs:label xml:lang="en">Consumes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#establishedIn -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#establishedIn">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Membership"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+        <rdfs:label xml:lang="es">Establecido en</rdfs:label>
+        <rdfs:label xml:lang="en">Established in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#hasGeopoint -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#hasGeopoint">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <rdfs:label xml:lang="en">Has Geographic point</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene punto geografico</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#hasRule -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#hasRule">
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/odrl/2/Rule"/>
+        <rdfs:label xml:lang="en">Has rule</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene norma</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#hasService -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#hasService">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio"/>
+        <rdfs:label xml:lang="es">Has service</rdfs:label>
+        <rdfs:label xml:lang="en">Tiene servicio</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#isOfferedByTeacher -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#isOfferedByTeacher">
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="es">Es ofrecido por profesor</rdfs:label>
+        <rdfs:label xml:lang="en">Is offered by a teacher</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#isOfferedInPlace -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#isOfferedInPlace">
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+        <rdfs:label xml:lang="es">Es ofrecido en lugar</rdfs:label>
+        <rdfs:label xml:lang="en">Is offered in place</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#isOfferedWithCosts -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#isOfferedWithCosts">
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido"/>
+        <rdfs:range rdf:resource="https://schema.org/priceSpecification#PriceSpecification"/>
+        <rdfs:label xml:lang="es">Es ofrecido con un coste</rdfs:label>
+        <rdfs:label xml:lang="en">Is offered with costs</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#itsPracticedIn -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#itsPracticedIn">
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"/>
+        <rdfs:label xml:lang="es">Es practicado en</rdfs:label>
+        <rdfs:label xml:lang="en">Is practiced In</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#managed_by -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#managed_by">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion"/>
+        <rdfs:label xml:lang="es">Gestionado por</rdfs:label>
+        <rdfs:label xml:lang="en">Managed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#offers -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#offers">
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido"/>
+        <rdfs:label xml:lang="en">Offers</rdfs:label>
+        <rdfs:label xml:lang="es">Ofrece</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#partOf -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#partOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar"/>
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario"/>
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+        <rdfs:label xml:lang="en">Part of</rdfs:label>
+        <rdfs:label xml:lang="es">Parte de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#practices -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#practices">
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte"/>
+        <rdfs:label xml:lang="es">Practica</rdfs:label>
+        <rdfs:label xml:lang="en">Practices</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#teaches -->
+
+    <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#teaches">
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Entrenador"/>
+        <rdfs:range rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte"/>
+        <rdfs:label xml:lang="es">Enseña</rdfs:label>
+        <rdfs:label xml:lang="en">Teaches</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#country-name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#country-name">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#locality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#locality">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#postal-code -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#postal-code">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#region -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#region">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#street-address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2006/vcard/ns#street-address">
+        <rdfs:domain rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#hasCeiling -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/priceSpecification#hasCeiling">
+        <rdfs:domain rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">Has ceiling</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene techo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#hasCurrency -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/priceSpecification#hasCurrency">
+        <rdfs:domain rdf:resource="https://schema.org/priceSpecification#PriceSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Has currency</rdfs:comment>
+        <rdfs:comment xml:lang="es">Tiene divisa</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#hasEmail -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/priceSpecification#hasEmail">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Has email</rdfs:comment>
+        <rdfs:comment xml:lang="es">Tiene email</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/priceSpecification#hasPrice">
+        <rdfs:domain rdf:resource="https://schema.org/priceSpecification#PriceSpecification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Has price</rdfs:comment>
+        <rdfs:comment xml:lang="es">Tiene precio</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://schema.org/priceSpecification#hasTelephoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="https://schema.org/priceSpecification#hasTelephoneNumber">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment xml:lang="en">Has telephone number</rdfs:comment>
+        <rdfs:comment xml:lang="es">Tiene numero de telefono</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Action -->
+
+    <owl:Class rdf:about="http://schema.org/Action"/>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Alquiler_de_pista_de_padel -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Alquiler_de_pista_de_padel">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual"/>
+        <rdfs:label xml:lang="es">Alquiler de pista de padel</rdfs:label>
+        <rdfs:label xml:lang="en">Paddle court rental</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre"/>
+        <rdfs:label xml:lang="en">Aquatic area</rdfs:label>
+        <rdfs:label xml:lang="es">Area acuatica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre"/>
+        <rdfs:label xml:lang="en">Air area</rdfs:label>
+        <rdfs:label xml:lang="es">Area aerea</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoSingular"/>
+        <rdfs:label xml:lang="es">Area de actividad deportiva</rdfs:label>
+        <rdfs:label xml:lang="en">Sports activity area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva"/>
+        <rdfs:label xml:lang="es">Area terrestre</rdfs:label>
+        <rdfs:label xml:lang="en">Land area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_de_tenis -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_de_tenis">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono"/>
+        <rdfs:label xml:lang="en">10 tenis classes pack</rdfs:label>
+        <rdfs:label xml:lang="en">Bono 10 clases de tenis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_zumba -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_zumba">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono"/>
+        <rdfs:label xml:lang="en">10 zumba classes pack</rdfs:label>
+        <rdfs:label xml:lang="en">Bono 10 clases zumba</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala"/>
+        <rdfs:label xml:lang="es">Campo</rdfs:label>
+        <rdfs:label xml:lang="en">Field</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Clase_individual_de_baloncesto -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Clase_individual_de_baloncesto">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual"/>
+        <rdfs:label xml:lang="es">Clase individual de baloncesto</rdfs:label>
+        <rdfs:label xml:lang="es">Individual basketball class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Party"/>
+                    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/Person"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Client</rdfs:label>
+        <rdfs:label xml:lang="es">Cliente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte">
+        <rdfs:label xml:lang="es">Deporte</rdfs:label>
+        <rdfs:label xml:lang="en">Sport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Entrenador -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Entrenador">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="en">Coach</rdfs:label>
+        <rdfs:label xml:lang="es">Entrenador</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"/>
+        <rdfs:label xml:lang="en">Auxiliary space</rdfs:label>
+        <rdfs:label xml:lang="es">Espacio auxiliiar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"/>
+        <rdfs:label xml:lang="en">Complementary space</rdfs:label>
+        <rdfs:label xml:lang="en">Espacio Complementario</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioEspecifico -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioEspecifico">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioGeneral"/>
+        <rdfs:label xml:lang="es">Espacio complementario auxiliar</rdfs:label>
+        <rdfs:label xml:lang="en">Specific complementary space</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioGeneral -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioGeneral">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario"/>
+        <rdfs:label xml:lang="es">Espacio complementario general</rdfs:label>
+        <rdfs:label xml:lang="en">General complementary space</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+        <rdfs:label xml:lang="es">Espacio deportivo</rdfs:label>
+        <rdfs:label xml:lang="en">Sports area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"/>
+        <rdfs:label xml:lang="en">Conventional sports area</rdfs:label>
+        <rdfs:label xml:lang="es">Espacio deportivo convencional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoSingular -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoSingular">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"/>
+        <rdfs:label xml:lang="es">Espacio deportivo singular</rdfs:label>
+        <rdfs:label xml:lang="en">Singular sports space</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala"/>
+        <rdfs:label xml:lang="en">Espacio longitudinal</rdfs:label>
+        <rdfs:label xml:lang="en">Longitudinal space</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Geolocalizacion -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Geolocalizacion"/>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Site"/>
+        <rdfs:comment xml:lang="es">Una instalacion deportiva tiene un nombre, direccion, numero de telefono, email y horario (ontologia time:)</rdfs:comment>
+        <rdfs:label xml:lang="es">Instalacion deportiva</rdfs:label>
+        <rdfs:label xml:lang="es">Sport facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Limpiador -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Limpiador">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="en">Cleaner</rdfs:label>
+        <rdfs:label xml:lang="es">Limpiador</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Monitor -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Monitor">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label xml:lang="en">Instructor</rdfs:label>
+        <rdfs:label xml:lang="es">Monitor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:label xml:lang="es">Organizacion</rdfs:label>
+        <rdfs:label xml:lang="en">Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala"/>
+        <rdfs:label xml:lang="es">Piscina</rdfs:label>
+        <rdfs:label xml:lang="en">Swimming pool</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala"/>
+        <rdfs:label xml:lang="en">Court</rdfs:label>
+        <rdfs:label xml:lang="es">Pista</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional"/>
+        <rdfs:label xml:lang="en">Indoor</rdfs:label>
+        <rdfs:label xml:lang="es">Sala</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio">
+        <rdfs:label xml:lang="en">Service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio"/>
+        <owl:disjointWith rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual"/>
+        <rdfs:label xml:lang="es">Bono de servicios</rdfs:label>
+        <rdfs:label xml:lang="en">Service pack</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio"/>
+        <rdfs:label xml:lang="en">Individual service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio individual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido">
+        <rdfs:label xml:lang="en">Offered service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio ofrecido</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Suscripcion_mensual_sala_musculacion -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Suscripcion_mensual_sala_musculacion">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono"/>
+        <rdfs:label xml:lang="en">Monthly subscription to a weight room</rdfs:label>
+        <rdfs:label xml:lang="es">Suscripción mensual de sala de musculación</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vale_de_24_horas_sala_musculación -->
+
+    <owl:Class rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vale_de_24_horas_sala_musculación">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual"/>
+        <rdfs:label xml:lang="en">24 hour voucher for weight room</rdfs:label>
+        <rdfs:label xml:lang="en">Vale de 24 horas sala de musculacion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+        <rdfs:comment> 
+Uniquely identified by lat/long/alt. i.e.
+
+spaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),
+  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).
+
+sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).
+  </rdfs:comment>
+        <rdfs:comment>A point, typically described using a coordinate system relative to Earth, such as WGS84.
+  </rdfs:comment>
+        <rdfs:label>point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Address -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Address">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#country-name"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#country-name"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#locality"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#locality"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#postal-code"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#postal-code"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#region"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#region"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#street-address"/>
+                                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.w3.org/2006/vcard/ns#street-address"/>
+                                <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">To specify the components of the delivery address for the  object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">Address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Email -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Email">
+        <rdfs:comment xml:lang="en">To specify the electronic mail address for communication with the object the vCard represents. Use the hasEmail object property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">Email</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Name -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Name">
+        <rdfs:comment xml:lang="en">To specify the components of the name of the object</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">Name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/vcard/ns#Tel -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/vcard/ns#Tel">
+        <rdfs:comment xml:lang="en">This class is deprecated. Use the hasTelephone object property.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+        <rdfs:label xml:lang="en">Tel</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Action -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Action">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Action"/>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Action</rdfs:label>
+        <skos:definition xml:lang="en">An operation on an Asset.</skos:definition>
+        <skos:note xml:lang="en">Actions may be allowed by Permissions, disallowed by Prohibitions, or made mandatory by Duties.</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Asset -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Asset">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Asset</rdfs:label>
+        <skos:definition xml:lang="en">A resource or a collection of resources that are the subject of a Rule.</skos:definition>
+        <skos:note xml:lang="en">The Asset entity can be any form of identifiable resource, such as data/information, content/media, applications, or services. Furthermore, it can be used to represent other Asset entities that are needed to undertake the Policy expression, such as with the Duty entity. To describe more details about the Asset, it is recommended to use Dublin Core [[dcterms]] elements or other content metadata.</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Constraint -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Constraint">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Constraint</rdfs:label>
+        <skos:definition xml:lang="en">A boolean expression that refines the semantics of an Action and Party/Asset Collection or declare the conditions applicable to a Rule.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Party -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Party">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Party</rdfs:label>
+        <skos:definition xml:lang="en">An entity or a collection of entities that undertake Roles in a Rule.</skos:definition>
+        <skos:note xml:lang="en">The Party entity could be a person, group of people, organisation, or agent. An agent is a person or thing that takes an active role or produces a specified effect. To describe more details about the Party, it is recommended to use W3C vCard Ontology [[vcard-rdf]] or FOAF Vocabulary [[foaf]].</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/odrl/2/Rule -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/odrl/2/Rule">
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/odrl/2/"/>
+        <rdfs:label xml:lang="en">Rule</rdfs:label>
+        <skos:definition xml:lang="en">An abstract concept that represents the common characteristics of Permissions, Prohibitions, and Duties.</skos:definition>
+        <skos:note xml:lang="en">Rule is an abstract concept.</skos:note>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Membership -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Membership">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/org#Role"/>
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/org#Site"/>
+        <rdfs:comment xml:lang="it">Indica la natura della relazione di appartenenza di un Agent in un&apos;organizzazione. Rappresenta una relazione n-aria tra un&apos;Agent, un Organization e un Role. È possibile indicare direttamente la membership, indipendentemente dallo specifico Role, attraverso l&apos;uso della proprietà `org:memberOf`</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the nature of an Agent&apos;s membership of an organization. Represents an n-ary relation between an Agent, an Organization and a Role. It is possible to directly indicate membership, independent of the specific Role, through use of the `org:memberOf` property.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Indique la nature de l&apos;engagement d&apos;un Agent dans une Organisation. Représente une relation n-aire entre un Agent, une Organisation et un Role. Il est possible d&apos;indiquer directement l&apos;appartenance à une organisation, independemment d&apos;un rôle spécifique, à travers l&apos;usage de la propriété `org:memberOf`.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Pertenencia o afiliación de un agente a una organización. Es una relación n-aria entre un agente, una organización y una actividad. Es posible indicar pertenencia mediante el uso de la propiedad `org:memberOf`, independientemente de la actividad específica que se desempeñe.</rdfs:comment>
+        <rdfs:comment xml:lang="ja">組織のエージェントの構成員の本質を示します。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org"/>
+        <rdfs:label xml:lang="it">Appartenenza</rdfs:label>
+        <rdfs:label xml:lang="fr">Engagement</rdfs:label>
+        <rdfs:label xml:lang="en">Membership</rdfs:label>
+        <rdfs:label xml:lang="es">membresía</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Organization">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/org#Site"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Post -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Post"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Role -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Role">
+        <owl:disjointWith rdf:resource="http://www.w3.org/ns/org#Site"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Site -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Site">
+        <rdfs:comment xml:lang="en">An office or other premise at which the organization is located. Many organizations are spread across multiple sites and many sites will host multiple locations. In most cases a Site will be a physical location. However, we don&apos;t exclude the possibility of non-physical sites such as a virtual office with an associated post box and phone reception service. Extensions may provide subclasses to denote particular types of site.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Oficina, local o cualquier otro lugar en el que se encuentra una organización. Muchas organizaciones están distribuidas en varias sedes, que a su vez están repartidas en distintas ubicaciones. En muchos casos una sede será un sitio o local físico. Sin embargo, no se excluye la posibilidad de lugares no físicos como oficinas virtuales con los correspondientes apartados de correo y servicio de atención telefónica. Se pueden añadir más subtipos mediante extensiones para incluir tipos especiales de lugares.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Un ufficio o altra sede dovei l&apos;organizzazione è situata. Molte organizzazione sono distribuite su più sedi e molte sedi ospitano più ubicazioni. Nella maggior parte dei casi un Site è una locazione fisica. Non si esclude la possibilità di indicare sedi non fisiche come ad esempio gli uffici virtuali. Le estensioni dell&apos;ontologia potrebbero usare delle sottoclassi per rappresentare i tipi particolari di sede.</rdfs:comment>
+        <rdfs:comment xml:lang="fr">Un établissement ou tout autre lieu dans lequel une Organisation est localisé. Beaucoup d&apos;organisations sont dispersées à travers plusieurs sites. Dans la plupart des cas un Site sera un lieu physique. Toutefois, nous n&apos;excluons pas la possibilité de sites non-physiques comme un bureau virtuel avec une boîte postale et un service de secrétariat mutualisé. Des extensions pourraient fournir des sous-classes pour décrire des types de sites particuliers.</rdfs:comment>
+        <rdfs:comment xml:lang="ja">組織が位置するオフィスやその他の敷地。多くの組織が複数のサイトに散在しており、多くのサイトが多数の場所を持つでしょう。</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.w3.org/ns/org"/>
+        <rdfs:label xml:lang="it">Sede</rdfs:label>
+        <rdfs:label xml:lang="en">Site</rdfs:label>
+        <rdfs:label xml:lang="fr">Site</rdfs:label>
+        <rdfs:label xml:lang="es">sede</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/priceSpecification#Gorro_de_baño -->
+
+    <owl:Class rdf:about="https://schema.org/priceSpecification#Gorro_de_baño">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Asset"/>
+        <rdfs:label xml:lang="es">Gorro de baño</rdfs:label>
+        <rdfs:label xml:lang="en">Swimming cap</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/priceSpecification#Llevar_puesto -->
+
+    <owl:Class rdf:about="https://schema.org/priceSpecification#Llevar_puesto">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Action"/>
+        <rdfs:label xml:lang="es">Llevar puesto</rdfs:label>
+        <rdfs:label xml:lang="en">Wearing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/priceSpecification#Obligatorio_el_uso_de_gorro_de_baño -->
+
+    <owl:Class rdf:about="https://schema.org/priceSpecification#Obligatorio_el_uso_de_gorro_de_baño">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/odrl/2/Rule"/>
+        <rdfs:label xml:lang="es">Obligatorio el uso de gorro de baño</rdfs:label>
+        <rdfs:label xml:lang="en">Use of bathing cap is mandatory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/priceSpecification#Piscina_Olimpica -->
+
+    <owl:Class rdf:about="https://schema.org/priceSpecification#Piscina_Olimpica">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina"/>
+                    <rdf:Description rdf:about="http://www.w3.org/ns/odrl/2/Constraint"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Olympic pool</rdfs:label>
+        <rdfs:label xml:lang="es">Piscina olimpica</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://schema.org/priceSpecification#PriceSpecification -->
+
+    <owl:Class rdf:about="https://schema.org/priceSpecification#PriceSpecification">
+        <rdfs:comment xml:lang="es">Esta clase esta compuesta por dos propiedades, una de ellas es la cuantía y la otra la moneda usada. Estas propiedades están definidas mediante las relaciones hasPrice  y hasCurrency respectivamente.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class is composed of two properties, one of them is the amount and the other is the currency used. These properties are defined by the relationships hasPrice and hasCurrency respectively.</rdfs:comment>
+        <rdfs:label xml:lang="es">Especificacion del precio</rdfs:label>
+        <rdfs:label xml:lang="es">Price specification</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
