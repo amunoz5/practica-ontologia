@@ -211,35 +211,17 @@
 	
 	Hemos importado la ontología Time de forma completa, ya que utilizábamos la totalidad de sus entidades. Al importar la ontología, nos hemos dado cuenta de que muchas de las propiedades estaban incompletas: les faltaba el rango o el dominio. Hemos optado por mantenerla como estaba, ya que muchos de estos problemas se debían a términos deprecados, y no hemos encontrado una versión más reciente de la ontología.
 	
-	Una vez importadas las clases necesarias, hemos definido aquellas que nos hacían falta para completar nuestro modelo, que no se encontraban ni en el T-Box ni en las ontologías de alto nivel, como puede ser por ejemplo la clase Monitor, Entrenador, Pista de Baloncesto... A continuación se muestra una imagen de la jerarquía de las clases.
-	
-	\begin{figure}[H]
+	Una vez importadas las clases necesarias, hemos definido aquellas que nos hacían falta para completar nuestro modelo, que no se encontraban ni en el T-Box ni en las ontologías de alto nivel, como puede ser por ejemplo la clase Monitor, Entrenador, Pista de Baloncesto... \\
 		
-		\centering
-		\includegraphics[width=0.6\textwidth]{include/classes.png}
-		\caption{Classes}
-	\end{figure}
-	
-	Este mismo procedimiento lo hemos realizado para los Object Properties. En este caso, a demás de importar los necesarios de las diferentes ontologías y crear los que necesitabamos, hemos definido las propiedades de cada propiedad. 
-	
+	Este mismo procedimiento lo hemos realizado para los Object Properties. En este caso, a demás de importar los necesarios de las diferentes ontologías y crear los que necesitabamos, hemos definido las propiedades de cada propiedad. \\
+		
 	Hemos tenido cierta dificultad a la hora de crear la propiedad Part Of, ya que tiene varios dominios para un único rango (tanto los espacios deportivos, como los complementarios y auxiliares son part of de una instalación deportiva). Para evitar interferencias, hemos incluido los diferentes dominios con la condición OR. 
 	
-	En la imagen a continuación se pueden ver los diferentes Object Properties de la ontología.
+	De forma similar hemos añadido los Data Properties. Estos en lugar de apuntar a una entidad, apuntan a un literal, por lo que hemos tenido que especificar los tipos de datos para literales como la divisa, el precio... Un caso particular ha sido la propiedad hasCeiling (tiene techo), para definir los Espacios Deportivos. En este caso el literal era un booleano. A continuación se muestran las diferentes Data Properties. \\
 	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.6\textwidth]{include/object.png}
-		\caption{Object Properties}
-	\end{figure}
+	Finalmente, hemos completado las labels y comentarios de aquellas entidades que no han sido directamente importadas, asegurandonos de que estaban disponibles tanto en inglés como español. 
 	
-	De forma similar hemos añadido los Data Properties. Estos en lugar de apuntar a una entidad, apuntan a un literal, por lo que hemos tenido que especificar los tipos de datos para literales como la divisa, el precio... Un caso particular ha sido la propiedad hasCeiling (tiene techo), para definir los Espacios Deportivos. En este caso el literal era un booleano. A continuación se muestran las diferentes Data Properties. 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.6\textwidth]{include/data.png}
-		\caption{Data Properties}
-	\end{figure}
-	
-	Finalmente, hemos completado las labels y comentarios de aquellas entidades que no han sido directamente importadas, asegurandonos de que estaban disponibles tanto en inglés como español. \\
+	En el anexo se puede encontrar una imagen de la jerarquía de las clases, los Object Properties y los Data Properties presentes en la ontología.
 	
 	Una vez finalizada la implementación de la ontología, la hemos exportado como RDF para poder evaluarla con OOPS!
 	
@@ -286,6 +268,26 @@
 	
 	\newpage
 	\section*{Anexos}
+	\addcontentsline{toc}{section}{Anexos}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[height=\textheight]{include/classes.png}
+		\caption{Jerarquía de clases de la ontología.}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{include/object.png}
+		\caption{Object Properties presentes en la ontología.}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{include/data.png}
+		\caption{Data Properties presentes en la ontología.}
+	\end{figure}
+	
 	\begin{figure}[H]
 		\centering
 		%\includegraphics[height=\textheight]{include/eval_final_oops.png}
