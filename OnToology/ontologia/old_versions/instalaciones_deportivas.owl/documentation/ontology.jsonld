@@ -1,0 +1,239 @@
+[ {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Alquiler_de_pista_de_padel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea"
+  }, {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional"
+  }, {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoSingular"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_de_tenis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_zumba",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal"
+  }, {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista"
+  }, {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala"
+  }, {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vaso"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Clase_individual_de_baloncesto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Entrenador",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario"
+  }, {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioEspecifico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioGeneral"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioGeneral",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoSingular",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista"
+  }, {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala"
+  }, {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vaso"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Monitor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala"
+  }, {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vaso"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vaso"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Suscripcion_mensual_sala_musculacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vale_de_24_horas_sala_musculación",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vaso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional"
+  } ]
+}, {
+  "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#associatedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "An EspacioComplementario (complementary space) is associated to an EspacioDeportivo (sports space)"
+  }, {
+    "@language" : "es",
+    "@value" : "Un EspacioComplementario está asociado a un EspacioDeportivo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo"
+  } ]
+} ]
