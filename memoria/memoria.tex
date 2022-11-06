@@ -48,6 +48,65 @@
 	\section{Especificación de la ontología}
 	% Ontology specification. You should include a complete ontology specification requirement document using the template explained during the lectures. The goal of the ontology should be clear enough. The document should include relevant competency questions and their answers.
 	
+	\subsection{Propósito}
+	El objetivo de esta Ontología se enmarca en el proyecto Ciudades abiertas, que tiene como objetivo representar datos de ciudades en diversas areas. el objetivo de esta ontología sera modelar el conocimiento de Instalaciones Deportivas para que pueda ser utilizado como ontolodía dentro del proyecto.
+	
+	\subsection{Ámbito}
+	La definición de Instalaciones Deportivas puede llegar a ser ambigua, dado que existen multiples instalaciones donde se realizan deporte con un fin muy distinto: un estadio de futbol y un parque de barras podrían ser ambos considerados instalaciones deportivas.
+	
+	Nuestra ontología se enmarca en la definición propuesta por el informe estadístico de 2022 publicado por el Ministerio de Educación, Cultura y Deporte, donde se proporcionan indicadores estadísticos para estimar las dimensiones y características de las infraestructuras en España. En el documento, se define instalación deportiva como: 'Instalaciones destinadas aldeporte que incluyen uno o varios espaciosdeportivos donde puede desarrollarse la actividadfísico-deportiva.'.
+	
+	\subsection{Lenguaje de la Implementación}
+	La ontología sera implementada en OWL utilizando Protegé.
+	
+	\subsection{Potenciales usuarios}
+	Los usuarios identificados como posibles interesados en el uso de la ontología han sido los siguientes.
+	\begin{enumerate}
+		\item Ayuntamiento interesado en el proyecto ciudades abiertas que quiera aumentar la transparencia de los datos de sus instalaciones deportivas.
+		\item Persona responsable de una instalación deportiva que quiera almacenar estadísticas de la misma y/o crear una página web de la instalación.
+		\item Deportista que quiera conocer que instalación deportiva le es más conveniente.
+		\item Ministerio u órgano del gobierno que quiera analizar estadísticas sobre el uso de las instalaciones deportivas en su país.
+	\end{enumerate}
+
+	\subsection{Potenciales casos de uso}
+	Los posibles casos de uso identificados son los siguientes.
+	\begin{enumerate}
+		\item Conocer los subespacios forman una Instalación Deportiva concreta.
+		\item Buscar servicios deportivos como clases o alquileres de espacios ofrecidos por la organziación que gestiona la Instalación Deportiva.
+		\item Enumerar los deportes que pueden realizarse en cada Instalación Deportiva, y en que subespacio se realizan.
+		\item Obtener estadísticas del uso de servicios ofrecidos en la Instalación Deportivapor cliente.
+		\item Obtener información sobre los trabajadores de la organización que lleva la instalación deportiva.
+	\end{enumerate}
+	
+	\subsection{Requisitos de la ontología}
+	\subsubsection{Requisitos no funcionales}
+	Los requisitos no funcionales de la ontología se refieren a las características y aspectos generales no directamente relacionados con el contenido de la ontología. En nuestro caso son los siguientes:
+	\begin{itemize}
+		\item NFR1: La ontología deberá soportar otros idiomas a parte de Español.
+		\item NFR2: La documentación asociada a la ontología debe incluir fuentes fiables.
+		\item NFR3: El formato utilizado para representar el conocimiento será OWL.
+		\item NFR4: El sistema de nombrado en la ontología sera comprensible y coherente.
+	\end{itemize}
+	\subsubsection{Requisitos funcionales:  preguntas de competencia}
+	Para las preguntas de competencia, hemos optado por un acercamiento \textit{Middle out}. Comenzamos realizando preguntas \textit{Bottom-Up}, sin mirar bases de datos ni contenido relacionado, simplemente buscando preguntas sencillas que podrían estar relacionadas con una instalación deprotiva. Cuando llegamos a un limite donde nuestras preguntas carecían de complejidad, entonces tuvimos un acercamiento \textit{Top-Down}, donde ya comenzamos a mirar información acerca de Instalaciones Deportivas, y pudimos desarrollar preguntas más complejas. El resultado puede verse en la tabla:
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{include/preguntas_competencia.png}
+		\caption{Preguntas de competencia}
+	\end{figure}
+	
+	\subsection{Glosario de términos}
+	
+	Tras realizar las preguntas de competencia, hemos contado los sustantivos relevantes que se repetían, tanto en las preguntas para identificar clases y relaciones, como en las respuestas. 
+	
+	Cabe destacar que las preguntas se han contestado de manera muy genérica, sin concretar para una Instalación específica, de forma que los términos recogidos están un nivel por encima de ser instancias. Los resultados de algunos de los términos más relevanten se recogen en la siguiente figura: 
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\textwidth]{include/terms.png}
+		\caption{Glosario de términos}		
+	\end{figure}
+	
 	\section{Planificación temporal de la ontología}
 	% Ontology Schedule. You should identify the ontology life cycle model you use in your ontology development. Activities should come from the glossary of terms. Include a Gantt chart with the planned activities.
 		
@@ -65,6 +124,25 @@
 	
 	\section{Búsqueda de ontologías de alto nivel}
 	% Search for existing top level and domain ontologies that you plan to reuse when building your ontology. Explain if you need to reuse the ontology as a whole or if you need some modules or statements. Explain in which repositories you made the search, ontologies found, their relevance to your work and the criteria being used for selecting or withdrawing some of them.
+	
+	Una vez identificados el glosario de términos mediante la especificación, y creado un modelo donde se relacionan las diferentes entidades, el siguiente paso es la formalización de la ontología. Para ello, hemos realizado una búsqueda de ontologías de alto nivel, detectando aquellas que cubren de manera total o parcial secciones de nuestro modelo para poder reutilizarlas.
+	
+	Las primeras ontologías que hemos identificado para nuestra ontología, fueron mencionadas a lo largo del curso:
+	\begin{itemize}
+		\item \textbf{Org.} La ontología org ha sido utilizada para representar la entidad de la organización que lleva la instalación deportiva. No hemos utilizado la ontología completa, solo los módulos que nos hacían falta para representar la organización, su localización y sus miembros. Esta ontología es ampliamente utilizada: en LOV, podemos ver que 37 ontologías reutilizan contenido de org.
+		\item \textbf{Foaf.} Para poder representar a todas las personas que pertenecen a nuestro modelo (director, entrenadores, monitores, deportistas...) hemos utilizado foaf. A efectos prácticos, nos ha servido con importar la ontología org, ya que esta contenía las entidades foaf que nos hacían falta
+		\item \textbf{Odrl.} La ontología ODRL permite modelar reglas y políticas. Se ha utilizado para representar las reglas de vestimenta en los espacios deportivos. Para ello, se ha utilizado únicamente parte de la ontología, en concreto las entidades que son necesarias para generar el patrón Norm, que describiremos más adelante.
+		\item \textbf{Geo.} La ontología Geo se ha utilizado para poder expresar la geolocalización de la instalación mediante la entidad GeoPoint. Esta ontología no tiene propiedades, así que hemos tenido que crear una propiedad que relacione la instalación con el GeoPoint. 
+		\item \textbf{Vcard.} Consiste en una ontología utilizada para representar la información que contiene una tarjeta de visita. En nuestro caso, hemos utilizado únicamente las entidades referentes a la dirección (Address) y nombre (OrganizationName).
+		
+	\end{itemize}
+	Una vez identificadas estas ontologías de alto nivel, utilizamos el buscador de LOV (Linked Open Vocabularies) para buscar otras posibles ontologías que pudiéramos reutilizar. En concreto encontramos las siguientes:
+	
+	\begin{itemize}
+		\item \textbf{Time.} La ontología time permite expresar tanto fechas como intervalos y duración de eventos. En nuestro caso, para expresar la fecha y la duración de los servicios hemos utilizado dos entidades diferentes.
+		\item \textbf{Sport.} Esta ontología estaba disponible en el buscador, pero las URIs no llevaban a ninguna ontología, por lo que no pudimos reutilizarla. 
+	\end{itemize}
+	A la hora de importar todas estas ontologías en protegé, utilizamos LOV como método de búsqueda de las URIs, lo que facilitó la tarea. 
 	
 	\section{Recursos no ontológicos}
 	%Search for non ontological resources and other terminologies that could be transformed into ontologies. Keep track of the URLs where you found them. For the selected resources, do not forget to justify why you have selected them. Check if you have Access rights for using them within your hands-on assigment.
@@ -106,6 +184,64 @@
 	
 	\section{Implementación de la ontología con OWL}
 	% Implement the ontology in an ontology development tool, or other ontology editor, using OWL as ontology language
+	
+	Una vez identificados el glosario de términos mediante la especificación, y hemos conceptualizado un modelo donde se relacionan las diferentes entidades, el siguiente paso, la formalización de la ontología. Para ello, hemos realizado una búsqueda de ontologías de alto nivel, de forma que si alguna de ellas cubre toda o parte de alguna de nuestras entidades, podamos \textbf{reutilizarla.
+	}.\\
+	Las primeras ontologías que hemos identificado para nuestra ontología, fueron mencionadas a lo largo del curso:
+	\begin{itemize}
+		\item \textbf{Org:}La ontología org ha sido utilizada para representar la entidad de la organización que lleva la instalación deportiva. No hemos utilizado la ontología completa, solo los módulos que nos hacían falta para representar la organización, su localización y sus miembros. Esta ontología es ampliamente utilizada: en LOV, podemos ver que 37 ontologías reutilizan contenido de org.
+		\item \textbf{Foaf: }Para poder representar a todas las personas que pertenecen a nuestro modelo (director, entrenadores, monitores, deportistas...) hemos utilizado foaf. A efectos prácticos, nos ha servido con importar la ontología org, ya que esta contenía las entidades foaf que nos hacían falta
+		\item \textbf{Odrl:} La ontología ODRL permite modelar reglas y políticas. Se ha utilizado para representar las reglas de vestimenta en los espacios deportivos. Para ello, se ha utilizado únicamente parte de la ontología, en concreto las entidades que son necesarias para generar el patrón Norm, que describiremos más adelante.
+		\item \textbf{Geo:} La ontología Geo se ha utilizado para poder expresar la geolocalización de la instalación mediante la entidad GeoPoint. Esta ontología no tiene propiedades, así que hemos tenido que crear una propiedad que relacione la instalación con el GeoPoint. 
+		\item \textbf{Vcard: }Consiste en una ontología utilizada para representar la información que contiene una tarjeta de visita. En nuestro caso, hemos utilizado únicamente las entidades referentes a la dirección (Address) y nombre (OrganizationName).
+		
+	\end{itemize}
+	Una vez identificadas estas ontologías de alto nivel, utilizamos el buscador de LOV (Linked Open Vocabularies) para buscar otras posibles ontologías que pudieramos reutilizar. En concreto encontramos las siguientes:
+	
+	\begin{itemize}
+		\item \textbf{Time:} La ontología time permite expresar tanto fechas como intervalos y duración de eventos. En nuestro caso, para expresar la fecha y la duración de los servicios hemos utilizado dos entidades diferentes.
+		\item \textbf{Sport:} Esta ontología estaba disponible en el buscador, pero las URIs no llevaban a ninguna ontología, por lo que no pudimos reutilizarla. 
+	\end{itemize}
+	A la hora de importar todas estas ontologías en protegé, utilizamos LOV como métode de búsqueda de las URIs, lo que facilito la tarea. 
+	Como se ha especificado en los requisitos, la onotlogía estará implementada en OWL. Para eso, hemos utilziado protégé, un editor de ontologías open source. \\
+	
+	El primer paso que hemos hecho ha sido incluir todas las clases de la ontología que hemos creado mediante el T-Box. Después, hemos reutilizado de las ontologías nombradas en el apartado 5 todas las clases que nos hacían falta. Para ello, hemos importado las ontologías con su URI y movido los axiomas necesarios a nuestra ontología.
+	
+	En general, la metodología para importar las ontologías ha sido idéntica para todas: primero hemos importando la ontología al completo con su uri, moviendo los axiomas que necesitábamos, y después hemos eliminando el resto. La única excepción ha sido la ontología Time. 
+	
+	Hemos importado la ontología Time de forma completa, ya que utilizábamos la totalidad de sus entidades. Al importar la ontología, nos hemos dado cuenta de que muchas de las propiedades estaban incompletas: les faltaba el rango o el dominio. Hemos optado por mantenerla como estaba, ya que muchos de estos problemas se debían a términos deprecados, y no hemos encontrado una versión más reciente de la ontología.
+	
+	Una vez importadas las clases necesarias, hemos definido aquellas que nos hacían falta para completar nuestro modelo, que no se encontraban ni en el T-Box ni en las ontologías de alto nivel, como puede ser por ejemplo la clase Monitor, Entrenador, Pista de Baloncesto... A continuación se muestra una imagen de la jerarquía de las clases.
+	
+	\begin{figure}[H]
+		
+		\centering
+		\includegraphics[width=0.6\textwidth]{include/classes.png}
+		\caption{Classes}
+	\end{figure}
+	
+	Este mismo procedimiento lo hemos realizado para los Object Properties. En este caso, a demás de importar los necesarios de las diferentes ontologías y crear los que necesitabamos, hemos definido las propiedades de cada propiedad. 
+	
+	Hemos tenido cierta dificultad a la hora de crear la propiedad Part Of, ya que tiene varios dominios para un único rango (tanto los espacios deportivos, como los complementarios y auxiliares son part of de una instalación deportiva). Para evitar interferencias, hemos incluido los diferentes dominios con la condición OR. 
+	
+	En la imagen a continuación se pueden ver los diferentes Object Properties de la ontología.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\textwidth]{include/object.png}
+		\caption{Object Properties}
+	\end{figure}
+	
+	De forma similar hemos añadido los Data Properties. Estos en lugar de apuntar a una entidad, apuntan a un literal, por lo que hemos tenido que especificar los tipos de datos para literales como la divisa, el precio... Un caso particular ha sido la propiedad hasCeiling (tiene techo), para definir los Espacios Deportivos. En este caso el literal era un booleano. A continuación se muestran las diferentes Data Properties. 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\textwidth]{include/data.png}
+		\caption{Data Properties}
+	\end{figure}
+	
+	Finalmente, hemos completado las labels y comentarios de aquellas entidades que no han sido directamente importadas, asegurandonos de que estaban disponibles tanto en inglés como español. \\
+	
+	Una vez finalizada la implementación de la ontología, la hemos exportado como RDF para poder evaluarla con OOPS!
 	
 	\section{Evaluación de la ontología con OOPS!}
 	% Evaluate the ontology with OOPS! and include in your report the pitfalls found. It is highly advisable to combine this evaluation with other ontology evaluation techniques.
