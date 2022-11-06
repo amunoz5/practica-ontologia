@@ -38,59 +38,59 @@
 	\section{Introducción}
 	% Introduction. High level overview of the ontology you plan to develop and brief description of the datasets and web pages that you plan to use.
 		
-	En el contexto de la iniciativa OpenCityData \cite{opencitydata} y del proyectoCiudades Abiertas \cite{ciudadesabiertas} se han desarrollado un buen número deontologías que permitan representar datos abiertos de ciudades, en muy diversas áreas (transporte,gestión económica, equipamientos, servicios, etc.). Dentro de esta iniciativa se encuentranmuchas áreas todavía por desarrollar, y es una de ellas en las que se enmarca el desarrollo denuestro trabajo.
+	En el contexto de la iniciativa OpenCityData \cite{opencitydata} y del proyectoCiudades Abiertas \cite{ciudadesabiertas} se han desarrollado un buen número deontologías que permitan representar datos abiertos de ciudades, en muy diversas áreas (transporte,gestión económica, equipamientos, servicios, etc.). Dentro de esta iniciativa se encuentranmuchas áreas todavía por desarrollar, y es una de ellas en las que se enmarca el desarrollo deeste trabajo.
 	
 	El objetivo es diseñar e implementar una ontología que represente de manera adecuadainstalaciones deportivas, sus características y acciones relacionadas. Las ontologías y otrasfuentes de conocimiento utilizadas durante el desarrollo de este trabajo serán citadas, y se puedeacceder a ellas a través de los hipervínculos de la bibliografía.La ontología por desarrollar constituirá un modelo para representar los datos asociados a unainstalación deportiva, donde se entiende como instalación deportiva un recinto o construcción provista de los medios necesarios para la práctica, aprendizaje y competición de uno o másdeportes, y que está asociada, organizada y mantenida por una determinada organización. Comoiremos describiendo en los siguientes apartados de la memoria, se especificarán todos losrequisitos necesarios para la creación de la ontología, y se detallarán todas las características deesta.
 	
-	A la hora de la creación de la ontología se han seguido las pautas que marca la metodología NeOn,haciendo uso tanto de recursos ontológicos como no ontológicos para su reutilización yreingeniería. Cada una de las actividades de la metodología han sido realizadas en una secuenciaespecificada y con un planteamiento ordenado, y tras ello se ha usado la herramienta  parala formalización en OWL de la ontología y OOPS! para su evaluación.
+	A la hora de la creación de la ontología se han seguido las pautas que marca la metodología NeOn,haciendo uso tanto de recursos ontológicos como no ontológicos para su reutilización yreingeniería. Cada una de las actividades de la metodología ha sido realizada según la secuenciaespecificada y con un planteamiento ordenado. Tras ello, se ha usado la herramienta Protégé parala formalización en OWL de la ontología, OOPS! para su evaluación y WIDOCO para su documentación.
 	
 	\section{Metodología NeOn}
 	% Make a short overview of the NeOn methodology making explicit:
 	%   a. which scenarios you plan to follow
 	%   b. which activities from the glossary of activities you plan to execute in your ontology development project
 	
-	La Metodología NeOn para la construcción de redes de ontologías es una metodología basada en
-	escenarios que se apoya en los aspectos de colaboración de desarrollo de ontologías y la
-	reutilización, así como en la evolución dinámica de las redes de ontologías en entornos
-	distribuidos\cite{oeg-neon}.
+	La Metodología NeOn para la construcción de redes de ontologías es una metodología basada enescenarios que se apoya en los aspectos de colaboración de desarrollo de ontologías y lareutilización, así como en la evolución dinámica de las redes de ontologías en entornosdistribuidos\cite{oeg-neon}.
 	
-	Como define esta metodología, hay un conjunto de nueve escenarios para la construcción de
-	ontologías, haciendo hincapié en la reutilización de recursos ontológicos, la reingeniería y la
-	fusión. Para este trabajo, en el cual se ha seguido la metodología NeOn se han seguido los
-	siguientes escenarios:
+	Como define esta metodología, hay un conjunto de nueve escenarios para la construcción deontologías, haciendo hincapié en la reutilización de recursos ontológicos, la reingeniería y lafusión. Para este trabajo se han seguido lossiguientes escenarios:
 	\begin{itemize}
-		\item \textbf{Escenario 2: La reutilización y reingeniería de los recursos no ontológicos (NOR).}
-		Se llevan a cabo procesos de reutilización NOR para decidir en base a los requisitosdefinidos de la ontología que NORs se utilizarán para construir la red de la ontología.Después de ello estos NORs se readaptarán mediante re-ingeniería.
-		\item \textbf{Escenario 4: La reutilización y re-ingeniería de los recursos ontológicos.} 
+		\item \textbf{Escenario 2: La reutilización y reingeniería de recursos no ontológicos (NOR).}
+		Se llevan a cabo procesos de reutilización NOR para decidir, en base a los requisitos definidos, qué recursos no ontológicos se utilizarán para construir la red de la ontología. Posteriormente estos NOR se readaptarán mediante reingeniería.
+		\item \textbf{Escenario 4: La reutilización y reingeniería de los recursos ontológicos.}
 		Se llevan a cabo procesos de reutilización de recursos y se reorganizan los recursos ontológicos.
 		\item \textbf{Escenario 7: Reutilización de los patrones de diseño de ontologías (ODPs).}
-		Losdesarrolladores de ontologías acceden a repositorios de reutilización ODPs.
+		\hl{Los desarrolladores de ontolog}ías acceden a repositorios de reutilización ODPs.
 		\item \textbf{Escenario 9: Localización de recursos ontológicos.}
-		Los desarrolladores de ontologíasadaptan una ontología a otras lenguas y la cultura las comunidades, obteniendo así unaontología multilingüe.
+		\hl{Los desarrolladores de ontolog}ías adaptan una ontología a otras lenguas y la cultura las comunidades, obteniendo así una ontología multilingüe.
 	\end{itemize}
 	
-	Otro punto importante dentro de la metodología NeOn es el glosario de actividades \cite{oeg-glossary}. Durante todo el proceso de construcción denuestra ontología se han realizado actividades incluidas en este glosario. A continuación se listanalgunas de las más importantes:
+	Otro punto importante dentro de la metodología NeOn es el glosario de actividades \cite{oeg-glossary}. Durante todo el proceso de construcción de
+	nuestra ontología se han realizado actividades incluidas en este glosario. A continuación se listan
+	algunas de las más importantes:
 	
 	\begin{itemize}
-		\item \textbf{Ontology Requirements Specification.} Planteamiento de preguntas y la resolución deestas para detectar las necesidades y requisitos de la ontología.
-		\item \textbf{Ontology Aligning.} Buscamos entre los diferentes recursos ontológicos los elementos comunes para evaluar cual es más adecuada para nuestra ontología.
-		\item \textbf{Ontology Annotation.} A los elementos de nuestra ontología les hemos asignado etiquetas(labels) y comentarios para enriquecerla.
-		\item \textbf{Ontology Comparison.} A la hora de buscar ontologías ya creadas sobre el mismo dominiotuvimos que comparar y evaluar las diferencias entre ellas para elegir las mas adecuadas.
-		\item \textbf{Ontology Conceptualization.} Durante el proceso de adquisición tuvimos que organizartoda la información recopilada para crear un modelo conceptual que cubriese losrequisitos definidos.
-		\item \textbf{Control.} Se siguió la planificación temporal prevista para completar las tareas dedesarrollo programadas.
-		\item \textbf{Ontology Design Pattern Reuse.} Se han reusado patrones de diseño para nuestraontología, concretamente el patrón de Normas y el de Servicios.
-		\item \textbf{Ontology Diagnosis.} Gracias al uso de herramientas como OOPS! pudimos evaluar losfallos de la ontología y corregirlos durante el proceso de desarrollo.
-		\item \textbf{Ontology Elicitation.} Se realizó una adquisición de estructuras conceptuales como el T-Box de documentos de expertos del dominio de las instalaciones deportivas.
-		\item \textbf{Ontology Erichment.} Hemos extendido con más relaciones y clases algunas de lasontologías que hemos reusado para completarlas para cubrir ciertos requisitos.
-		\item \textbf{Ontology Implementation.} Una vez diseñado el modelo conceptual se transformó la ontologia a un modelo formal (código OWL) gracias a Protégé.
-		\item \textbf{Ontology Localization.} Las entidades y relaciones creadas se etiquetaron tanto en españolcomo inglés.
-		\item \textbf{Ontology Merging.} Se fusionaron clases y funciones de distintas ontologías para crearuna nueva.
-		\item \textbf{Ontology Search.} Se realizó una búsqueda de ontologías o módulos de ontologíascandidatas para ser reutilizadas.
-		\item \textbf{Ontology Module Extraction.} Se han extraído módulos concretos de ciertas ontologías.
-		\item \textbf{Ontology Module Reuse.} Se han reutilizado los módulos extraídos de otras ontologías.
-		\item \textbf{Non-Ontological Resource Reengineering.} Se han reestructurado contenidos noontológicos para adaptarlos a nuestra ontología.
-		\item \textbf{Non-Ontological Resource Reuse.} Se han usado recursos no ontológicos paratransformarlos en partes de ontologías.
-		\item \textbf{Scheduling.} Se ha realizado una planificación de las actividades anteriores paracompletarlas en el orden correcto y así llevar un control de las mismas.
+		\item \textbf{Ontology Requirements Specification.} Planteamiento de preguntas y la resolución de
+		estas para detectar las necesidades y requisitos de la ontología.
+		\item \textbf{Ontology Aligning.} Buscamos entre los diferentes recursos ontológicos los elementos comunes para evaluar qué recursos son más adecuados para nuestra ontología.
+		\item \textbf{Ontology Annotation.} Se han asignado etiquetas (labels) y comentarios para enriquecer la ontología.
+		\item \textbf{Ontology Comparison.} Al buscar ontologías ya creadas sobre el mismo dominio, se compararon y evaluaron  las diferencias entre ellas para elegir las ontologías más adecuadas para la reutilización.
+		\item \textbf{Ontology Conceptualization.} Durante el proceso de adquisición, se organizó
+		toda la información recopilada para crear un modelo conceptual que cubriese los
+		requisitos definidos.
+		\item \textbf{Control.} Se siguió la planificación temporal prevista para completar las tareas de
+		desarrollo programadas.
+		\item \textbf{Ontology Design Pattern Reuse.} Se han reusaron patrones de diseño para estaontología, concretamente el patrón de Normas y el de Servicios.
+		\item \textbf{Ontology Diagnosis.} Gracias al uso de herramientas como OOPS! se pudieron evaluar losfallos de la ontología y corregirlos durante el proceso de desarrollo.
+		\item \textbf{Ontology Elicitation.} Se realizó una adquisición de estructuras conceptuales, como el T-Box, a partir de documentos de expertos del dominio de las instalaciones deportivas.
+		\item \textbf{Ontology Erichment.} Extendiendo el número de relaciones y clases de algunas de las ontologías reutilizadas se logró completarlas y cubrir ciertos requisitos.
+		\item \textbf{Ontology Implementation.} Una vez diseñado el modelo conceptual se transformó la ontología a un modelo formal (código OWL) gracias a Protégé.
+		\item \textbf{Ontology Localization.} Las entidades y relaciones creadas se etiquetaron tanto en españolcomo en inglés.
+		\item \textbf{Ontology Merging.} Se fusionaron clases y funciones de distintas ontologías para crearuna ontología nueva.
+		\item \textbf{Ontology Search.} Se realizó una búsqueda de ontologías o módulos de ontologíascandidatas a ser reutilizadas.
+		\item \textbf{Ontology Module Extraction.} Se extrajeron módulos concretos de ciertas ontologías.
+		\item \textbf{Ontology Module Reuse.} Se reutilizaron los módulos extraídos de otras ontologías.
+		\item \textbf{Non-Ontological Resource Reengineering.} Se reestructuraron recursos noontológicos para adaptarlos a la ontología.
+		\item \textbf{Non-Ontological Resource Reuse.} Se reusaron recursos no ontológicos paratransformarlos en partes de la ontología.
+		\item \textbf{Scheduling.} Se realizó una planificación de las actividades anteriores paracompletarlas en el orden correcto dentro del plazo de entrega y así llevar un control de las mismas.
 	\end{itemize}
 	
 	\section{Especificación de la ontología}
