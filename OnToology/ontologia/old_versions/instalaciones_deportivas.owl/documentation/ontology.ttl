@@ -1,0 +1,200 @@
+@prefix : <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#> .
+
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#associatedTo
+:associatedTo rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :EspacioComplementario ;
+              rdfs:range :EspacioDeportivo ;
+              rdfs:label "An EspacioComplementario (complementary space) is associated to an EspacioDeportivo (sports space)"@en ,
+                         "Un EspacioComplementario está asociado a un EspacioDeportivo"@es .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Alquiler_de_pista_de_padel
+:Alquiler_de_pista_de_padel rdf:type owl:Class ;
+                            rdfs:subClassOf :ServicioIndividual .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica
+:AreaAcuatica rdf:type owl:Class ;
+              rdfs:subClassOf :AreaDeActividadDeportiva ;
+              owl:disjointWith :AreaAerea ,
+                               :AreaTerrestre .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea
+:AreaAerea rdf:type owl:Class ;
+           rdfs:subClassOf :AreaDeActividadDeportiva ;
+           owl:disjointWith :AreaTerrestre .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva
+:AreaDeActividadDeportiva rdf:type owl:Class ;
+                          rdfs:subClassOf :EspacioDeportivo ;
+                          owl:disjointWith :EspacioDeportivoConvencional ,
+                                           :EspacioDeportivoSingular .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre
+:AreaTerrestre rdf:type owl:Class ;
+               rdfs:subClassOf :AreaDeActividadDeportiva .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_de_tenis
+:Bono_10_clases_de_tenis rdf:type owl:Class ;
+                         rdfs:subClassOf :ServicioBono .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_zumba
+:Bono_10_clases_zumba rdf:type owl:Class ;
+                      rdfs:subClassOf :ServicioBono .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo
+:Campo rdf:type owl:Class ;
+       rdfs:subClassOf :EspacioDeportivoConvencional ;
+       owl:disjointWith :EspacioLongitudinal ,
+                        :Pista ,
+                        :Sala ,
+                        :Vaso .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Clase_individual_de_baloncesto
+:Clase_individual_de_baloncesto rdf:type owl:Class ;
+                                rdfs:subClassOf :ServicioIndividual .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente
+:Cliente rdf:type owl:Class .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte
+:Deporte rdf:type owl:Class .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Entrenador
+:Entrenador rdf:type owl:Class .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar
+:EspacioAuxiliar rdf:type owl:Class ;
+                 rdfs:subClassOf :InstalacionDeportiva ;
+                 owl:disjointWith :EspacioComplementario ,
+                                  :EspacioDeportivo .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario
+:EspacioComplementario rdf:type owl:Class ;
+                       rdfs:subClassOf :InstalacionDeportiva ;
+                       owl:disjointWith :EspacioDeportivo .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioEspecifico
+:EspacioComplementarioEspecifico rdf:type owl:Class ;
+                                 rdfs:subClassOf :EspacioComplementario ;
+                                 owl:disjointWith :EspacioComplementarioGeneral .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioGeneral
+:EspacioComplementarioGeneral rdf:type owl:Class ;
+                              rdfs:subClassOf :EspacioComplementario .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo
+:EspacioDeportivo rdf:type owl:Class ;
+                  rdfs:subClassOf :InstalacionDeportiva .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional
+:EspacioDeportivoConvencional rdf:type owl:Class ;
+                              rdfs:subClassOf :EspacioDeportivo .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoSingular
+:EspacioDeportivoSingular rdf:type owl:Class ;
+                          rdfs:subClassOf :EspacioDeportivo .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal
+:EspacioLongitudinal rdf:type owl:Class ;
+                     rdfs:subClassOf :EspacioDeportivoConvencional ;
+                     owl:disjointWith :Pista ,
+                                      :Sala ,
+                                      :Vaso .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva
+:InstalacionDeportiva rdf:type owl:Class .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Monitor
+:Monitor rdf:type owl:Class .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion
+:Organizacion rdf:type owl:Class .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista
+:Pista rdf:type owl:Class ;
+       rdfs:subClassOf :EspacioDeportivoConvencional ;
+       owl:disjointWith :Sala ,
+                        :Vaso .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala
+:Sala rdf:type owl:Class ;
+      rdfs:subClassOf :EspacioDeportivoConvencional ;
+      owl:disjointWith :Vaso .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio
+:Servicio rdf:type owl:Class .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono
+:ServicioBono rdf:type owl:Class ;
+              rdfs:subClassOf :Servicio ;
+              owl:disjointWith :ServicioIndividual .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual
+:ServicioIndividual rdf:type owl:Class ;
+                    rdfs:subClassOf :Servicio .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido
+:ServicioOfrecido rdf:type owl:Class .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Suscripcion_mensual_sala_musculacion
+:Suscripcion_mensual_sala_musculacion rdf:type owl:Class ;
+                                      rdfs:subClassOf :ServicioBono .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vale_de_24_horas_sala_musculación
+:Vale_de_24_horas_sala_musculación rdf:type owl:Class ;
+                                   rdfs:subClassOf :ServicioIndividual .
+
+
+###  http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vaso
+:Vaso rdf:type owl:Class ;
+      rdfs:subClassOf :EspacioDeportivoConvencional .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,874 @@
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2006/time#2016> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#associatedTo
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#associatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#associatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#associatedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#associatedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#associatedTo> <http://www.w3.org/2000/01/rdf-schema#label> "An EspacioComplementario (complementary space) is associated to an EspacioDeportivo (sports space)"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#associatedTo> <http://www.w3.org/2000/01/rdf-schema#label> "Un EspacioComplementario está asociado a un EspacioDeportivo"@es .
+# 
+# http://www.w3.org/2006/time#hasDateTimeDescription
+<http://www.w3.org/2006/time#hasDateTimeDescription> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2006/time#hasTemporalDuration
+<http://www.w3.org/2006/time#hasTemporalDuration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido> .
+# 
+# http://www.w3.org/2006/vcard/ns#hasAddress
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/vcard/ns#Address> .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "To specify the components of the delivery address for the object"@en .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#hasAddress> <http://www.w3.org/2000/01/rdf-schema#label> "has address"@en .
+# 
+# http://www.w3.org/2006/vcard/ns#hasEmail
+<http://www.w3.org/2006/vcard/ns#hasEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2006/vcard/ns#hasEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.w3.org/2006/vcard/ns#hasEmail> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/vcard/ns#hasEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/vcard/ns#Email> .
+<http://www.w3.org/2006/vcard/ns#hasEmail> <http://www.w3.org/2000/01/rdf-schema#comment> "To specify the electronic mail address for communication with the object"@en .
+<http://www.w3.org/2006/vcard/ns#hasEmail> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#hasEmail> <http://www.w3.org/2000/01/rdf-schema#label> "has email"@en .
+# 
+# http://www.w3.org/2006/vcard/ns#hasOrganizationName
+<http://www.w3.org/2006/vcard/ns#hasOrganizationName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2006/vcard/ns#hasOrganizationName> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/vcard/ns#hasOrganizationName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/vcard/ns#Name> .
+<http://www.w3.org/2006/vcard/ns#hasOrganizationName> <http://www.w3.org/2000/01/rdf-schema#comment> "Used to support property parameters for the organization name data property"@en .
+<http://www.w3.org/2006/vcard/ns#hasOrganizationName> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#hasOrganizationName> <http://www.w3.org/2000/01/rdf-schema#label> "has organization name"@en .
+# 
+# http://www.w3.org/2006/vcard/ns#hasTelephone
+<http://www.w3.org/2006/vcard/ns#hasTelephone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2006/vcard/ns#hasTelephone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#InverseFunctionalProperty> .
+<http://www.w3.org/2006/vcard/ns#hasTelephone> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/vcard/ns#hasTelephone> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/vcard/ns#Tel> .
+<http://www.w3.org/2006/vcard/ns#hasTelephone> <http://www.w3.org/2000/01/rdf-schema#comment> "To specify the telephone number for telephony communication with the object"@en .
+<http://www.w3.org/2006/vcard/ns#hasTelephone> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#hasTelephone> <http://www.w3.org/2000/01/rdf-schema#label> "has telephone"@en .
+# 
+# http://www.w3.org/ns/odrl/2/action
+<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/odrl/2/Rule> .
+<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Action> .
+<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/2000/01/rdf-schema#label> "Has Action"@en .
+<http://www.w3.org/ns/odrl/2/action> <http://www.w3.org/2004/02/skos/core#definition> "The operation relating to the Asset for which the Rule is being subjected."@en .
+# 
+# http://www.w3.org/ns/odrl/2/assigneeOf
+<http://www.w3.org/ns/odrl/2/assigneeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/assigneeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/odrl/2/Party> .
+<http://www.w3.org/ns/odrl/2/assigneeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Rule> .
+<http://www.w3.org/ns/odrl/2/assigneeOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<http://www.w3.org/ns/odrl/2/assigneeOf> <http://www.w3.org/2000/01/rdf-schema#label> "Assignee Of"@en .
+<http://www.w3.org/ns/odrl/2/assigneeOf> <http://www.w3.org/2004/02/skos/core#definition> "Identifies an ODRL Policy for which the identified Party undertakes the assignee functional role."@en .
+<http://www.w3.org/ns/odrl/2/assigneeOf> <http://www.w3.org/2004/02/skos/core#note> "When assigneeOf has been asserted between a metadata expression and an ODRL Policy, the Party being identified MUST be inferred to undertake the assignee functional role of all the Rules of that Policy."@en .
+# 
+# http://www.w3.org/ns/odrl/2/constraint
+<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/odrl/2/Rule> .
+<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Constraint> .
+<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/2000/01/rdf-schema#label> "Has Constraint"@en .
+<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/2004/02/skos/core#definition> "Constraint applied to a Rule"@en .
+<http://www.w3.org/ns/odrl/2/constraint> <http://www.w3.org/2004/02/skos/core#note> "Constraints on Rules are used to determine if a rule is Active or not. Example: the Permission rule is only active during the year 2018."@en .
+# 
+# http://www.w3.org/ns/odrl/2/relation
+<http://www.w3.org/ns/odrl/2/relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/odrl/2/target
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/odrl/2/relation> .
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/odrl/2/Rule> .
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Asset> .
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2000/01/rdf-schema#label> "Target"@en .
+<http://www.w3.org/ns/odrl/2/target> <http://www.w3.org/2004/02/skos/core#definition> "The target property indicates the Asset that is the primary subject to which the Rule action directly applies."@en .
+# 
+# http://www.w3.org/ns/org#hasMember
+<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/org#memberOf> .
+<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/org#Membership> .
+<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica una persona che è membro della data Organization. È l'inverso di `org:memberOf` ed è fornita per  compatibilità con `foaf:member`."@it .
+<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a person who is a member of the subject Organization. Inverse of `org:memberOf`, see that property for further clarification. Provided for compatibility with `foaf:member`."@en .
+<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Indique une personne membre de l'Organisation sujet. Inverse de `org:memberOf`, voyez la description de cette propriété pour plus de précisions. Fourni pour la compatibilité avec `foaf:member`."@fr .
+<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Persona que es miembro de la organización en cuestión. Es la relación inversa de `org:memberOf`, véase la descripción de esa propiedad para más detalles. Se prevé compatibilidad con foaf:member`."@es .
+<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/2000/01/rdf-schema#comment> "対象組織のメンバーであるエージェント（人または他の組織）を示します。org:memberOfの逆。さらに明確な説明については、そのプロパティーを参照してください。"@ja .
+<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/org> .
+<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/2000/01/rdf-schema#label> "ha membro"@it .
+<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/2000/01/rdf-schema#label> "has member"@en .
+<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/2000/01/rdf-schema#label> "possède un membre"@fr .
+<http://www.w3.org/ns/org#hasMember> <http://www.w3.org/2000/01/rdf-schema#label> "tiene miembro"@es .
+# 
+# http://www.w3.org/ns/org#memberOf
+<http://www.w3.org/ns/org#memberOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/org#memberOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://www.w3.org/ns/org#memberOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/org#Membership> .
+<http://www.w3.org/ns/org#memberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica che una persona è membro di una Organization senza una precisa indicazione sulla natura di questa appartenenza e sul suo ruolo. Si noti che la scelta del nome di questa proprietà non intende limitarla alla sola  rappresentazione formalmente di un'appartenenza. La proprietà può coprire anche altri coinvolgimenti nell'organizzazione. Questa proprietà può essere specializzata per indicare ruoli all'interno organizzazione o relazioni di diverse tipologie. Ha `org:hasmember` come proprietà inversa opzionale."@it .
+<http://www.w3.org/ns/org#memberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a person is a member of the Organization with no indication of the nature of that membership or the role played. Note that the choice of property name is not meant to limit the property to only formal membership arrangements, it is also indended to cover related concepts such as affilliation or other involvement in the organization. Extensions can specialize this relationship to indicate particular roles within the organization or more nuanced relationships to the organization. Has an optional inverse, `org:hasmember`."@en .
+<http://www.w3.org/ns/org#memberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Indique qu'une personne est membre de l'Organisation sans précision sur la nature de cet engagement ou du rôle joué. Notez que le choix du nom de cette propriété ne vise pas à la limiter aux seuls engagements formels, elle peut également couvrir des concepts reliés comme l'affiliation ou le bénévolat. Des extensions peuvent spécialiser cette relation pour indiquer des rôles particuliers au sein de l'Organisation or des relations plus nuancées avec elle. Possède une propriété inverse optionnelle, `org:hasmember`."@fr .
+<http://www.w3.org/ns/org#memberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Persona que pertenece a la organización o es miembro de la misma, sin que conste la naturaleza de dicha pertenencia o el papel que desempeña. Se debe tener en cuenta que la elección de una denominación para esta propiedad no significa que la propiedad esté limitada a ciertos tipos de pertenencia formales, sino que pretende cubrir conceptos relacionados como el de afiliación u otras formas de participación en la organización. Se puede hacer uso de extensiones para especializar esta relación de forma que incluya tipos específicos de pertenencia a las organizaciones o relaciones especiales con la organización."@es .
+<http://www.w3.org/ns/org#memberOf> <http://www.w3.org/2000/01/rdf-schema#comment> "エージェント（人または他の組織）が組織のメンバーであることを示します。ただし、その構成員の本質や担う役割は示しません。プロパティー名の選択は、プロパティーを正式な構成員配置のみに制限することが目的ではないことに注意してください。所属や組織へのその他の関与などの関連する概念をカバーすることも意図されています。拡張により、この関係を特殊化し、組織内の特定の役割やよりニュアンスを含んだ組織との関係を示すことができます。"@ja .
+<http://www.w3.org/ns/org#memberOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/org> .
+<http://www.w3.org/ns/org#memberOf> <http://www.w3.org/2000/01/rdf-schema#label> "es miembro de"@es .
+<http://www.w3.org/ns/org#memberOf> <http://www.w3.org/2000/01/rdf-schema#label> "member of"@en .
+<http://www.w3.org/ns/org#memberOf> <http://www.w3.org/2000/01/rdf-schema#label> "membre de"@fr .
+<http://www.w3.org/ns/org#memberOf> <http://www.w3.org/2000/01/rdf-schema#label> "membro di"@it .
+# 
+# http://www.w3.org/ns/org#organization
+<http://www.w3.org/ns/org#organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/org#organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/ns/org#organization> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/org#Membership> .
+<http://www.w3.org/ns/org#organization> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/org#Organization> .
+<http://www.w3.org/ns/org#organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica l'Organization in cui l'Agent è un membro."@it .
+<http://www.w3.org/ns/org#organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates Organization in which the Agent is a member."@en .
+<http://www.w3.org/ns/org#organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Indique l'Organization dont l'agent est membre."@fr .
+<http://www.w3.org/ns/org#organization> <http://www.w3.org/2000/01/rdf-schema#comment> "Organización a la que pertenece el agente en calidad de miembro."@es .
+<http://www.w3.org/ns/org#organization> <http://www.w3.org/2000/01/rdf-schema#comment> "エージェントがメンバーである組織を示します。"@ja .
+<http://www.w3.org/ns/org#organization> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/org> .
+<http://www.w3.org/ns/org#organization> <http://www.w3.org/2000/01/rdf-schema#label> "es condición de miembro sobre organización"@es .
+<http://www.w3.org/ns/org#organization> <http://www.w3.org/2000/01/rdf-schema#label> "organisation"@fr .
+<http://www.w3.org/ns/org#organization> <http://www.w3.org/2000/01/rdf-schema#label> "organization"@en .
+<http://www.w3.org/ns/org#organization> <http://www.w3.org/2000/01/rdf-schema#label> "organizzazione"@it .
+# 
+# http://www.w3.org/ns/org#role
+<http://www.w3.org/ns/org#role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/org#Membership> .
+<http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/org#Role> .
+<http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad que el agente desempeña en una relación de pertenencia a una organización."@es .
+<http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica il Role che un Agent ricopre in una relazione di Membership con una Organization"@it .
+<http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the Role that the Agent plays in a Membership relationship with an Organization."@en .
+<http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#comment> "Indique le Rôle de l'Agent dans son Engagement avec l'Organisation."@fr .
+<http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#comment> "エージェントが組織との構成員関係において担う役割を示します。ポストの保持者が担う役割を示すためにorg:Postで用いることもできます。"@ja .
+<http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/org> .
+<http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#label> "desempeña la actividad de"@es .
+<http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#label> "role"@en .
+<http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#label> "ruolo"@it .
+<http://www.w3.org/ns/org#role> <http://www.w3.org/2000/01/rdf-schema#label> "rôle"@fr .
+# 
+# https://schema.org/priceSpecification#consumes
+<https://schema.org/priceSpecification#consumes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification#consumes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente> .
+<https://schema.org/priceSpecification#consumes> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido> .
+<https://schema.org/priceSpecification#consumes> <http://www.w3.org/2000/01/rdf-schema#label> "Consume"@es .
+<https://schema.org/priceSpecification#consumes> <http://www.w3.org/2000/01/rdf-schema#label> "Consumes"@en .
+# 
+# https://schema.org/priceSpecification#establishedIn
+<https://schema.org/priceSpecification#establishedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification#establishedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/org#Membership> .
+<https://schema.org/priceSpecification#establishedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+<https://schema.org/priceSpecification#establishedIn> <http://www.w3.org/2000/01/rdf-schema#label> "Establecido en"@es .
+<https://schema.org/priceSpecification#establishedIn> <http://www.w3.org/2000/01/rdf-schema#label> "Established in"@en .
+# 
+# https://schema.org/priceSpecification#hasGeopoint
+<https://schema.org/priceSpecification#hasGeopoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification#hasGeopoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://schema.org/priceSpecification#hasGeopoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+<https://schema.org/priceSpecification#hasGeopoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#Point> .
+<https://schema.org/priceSpecification#hasGeopoint> <http://www.w3.org/2000/01/rdf-schema#label> "Has Geographic point"@en .
+<https://schema.org/priceSpecification#hasGeopoint> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene punto geografico"@es .
+# 
+# https://schema.org/priceSpecification#hasRule
+<https://schema.org/priceSpecification#hasRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification#hasRule> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+<https://schema.org/priceSpecification#hasRule> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/odrl/2/Rule> .
+<https://schema.org/priceSpecification#hasRule> <http://www.w3.org/2000/01/rdf-schema#label> "Has rule"@en .
+<https://schema.org/priceSpecification#hasRule> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene norma"@es .
+# 
+# https://schema.org/priceSpecification#hasService
+<https://schema.org/priceSpecification#hasService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification#hasService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://schema.org/priceSpecification#hasService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://schema.org/priceSpecification#hasService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido> .
+<https://schema.org/priceSpecification#hasService> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio> .
+<https://schema.org/priceSpecification#hasService> <http://www.w3.org/2000/01/rdf-schema#label> "Has service"@es .
+<https://schema.org/priceSpecification#hasService> <http://www.w3.org/2000/01/rdf-schema#label> "Tiene servicio"@en .
+# 
+# https://schema.org/priceSpecification#isOfferedByTeacher
+<https://schema.org/priceSpecification#isOfferedByTeacher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification#isOfferedByTeacher> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido> .
+<https://schema.org/priceSpecification#isOfferedByTeacher> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Person> .
+<https://schema.org/priceSpecification#isOfferedByTeacher> <http://www.w3.org/2000/01/rdf-schema#label> "Es ofrecido por profesor"@es .
+<https://schema.org/priceSpecification#isOfferedByTeacher> <http://www.w3.org/2000/01/rdf-schema#label> "Is offered by a teacher"@en .
+# 
+# https://schema.org/priceSpecification#isOfferedInPlace
+<https://schema.org/priceSpecification#isOfferedInPlace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification#isOfferedInPlace> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido> .
+<https://schema.org/priceSpecification#isOfferedInPlace> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+<https://schema.org/priceSpecification#isOfferedInPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Es ofrecido en lugar"@es .
+<https://schema.org/priceSpecification#isOfferedInPlace> <http://www.w3.org/2000/01/rdf-schema#label> "Is offered in place"@en .
+# 
+# https://schema.org/priceSpecification#isOfferedWithCosts
+<https://schema.org/priceSpecification#isOfferedWithCosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification#isOfferedWithCosts> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido> .
+<https://schema.org/priceSpecification#isOfferedWithCosts> <http://www.w3.org/2000/01/rdf-schema#range> <https://schema.org/priceSpecification#PriceSpecification> .
+<https://schema.org/priceSpecification#isOfferedWithCosts> <http://www.w3.org/2000/01/rdf-schema#label> "Es ofrecido con un coste"@es .
+<https://schema.org/priceSpecification#isOfferedWithCosts> <http://www.w3.org/2000/01/rdf-schema#label> "Is offered with costs"@en .
+# 
+# https://schema.org/priceSpecification#itsPracticedIn
+<https://schema.org/priceSpecification#itsPracticedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification#itsPracticedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte> .
+<https://schema.org/priceSpecification#itsPracticedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo> .
+<https://schema.org/priceSpecification#itsPracticedIn> <http://www.w3.org/2000/01/rdf-schema#label> "Es practicado en"@es .
+<https://schema.org/priceSpecification#itsPracticedIn> <http://www.w3.org/2000/01/rdf-schema#label> "Is practiced In"@en .
+# 
+# https://schema.org/priceSpecification#managed_by
+<https://schema.org/priceSpecification#managed_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification#managed_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://schema.org/priceSpecification#managed_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AsymmetricProperty> .
+<https://schema.org/priceSpecification#managed_by> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://schema.org/priceSpecification#managed_by> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+<https://schema.org/priceSpecification#managed_by> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion> .
+<https://schema.org/priceSpecification#managed_by> <http://www.w3.org/2000/01/rdf-schema#label> "Gestionado por"@es .
+<https://schema.org/priceSpecification#managed_by> <http://www.w3.org/2000/01/rdf-schema#label> "Managed by"@en .
+# 
+# https://schema.org/priceSpecification#offers
+<https://schema.org/priceSpecification#offers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification#offers> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion> .
+<https://schema.org/priceSpecification#offers> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido> .
+<https://schema.org/priceSpecification#offers> <http://www.w3.org/2000/01/rdf-schema#label> "Offers"@en .
+<https://schema.org/priceSpecification#offers> <http://www.w3.org/2000/01/rdf-schema#label> "Ofrece"@es .
+# 
+# https://schema.org/priceSpecification#partOf
+<https://schema.org/priceSpecification#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://schema.org/priceSpecification#partOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://schema.org/priceSpecification#partOf> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#unionOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/priceSpecification#partOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+<https://schema.org/priceSpecification#partOf> <http://www.w3.org/2000/01/rdf-schema#label> "Part of"@en .
+<https://schema.org/priceSpecification#partOf> <http://www.w3.org/2000/01/rdf-schema#label> "Parte de"@es .
+# 
+# https://schema.org/priceSpecification#practices
+<https://schema.org/priceSpecification#practices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification#practices> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente> .
+<https://schema.org/priceSpecification#practices> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte> .
+<https://schema.org/priceSpecification#practices> <http://www.w3.org/2000/01/rdf-schema#label> "Practica"@es .
+<https://schema.org/priceSpecification#practices> <http://www.w3.org/2000/01/rdf-schema#label> "Practices"@en .
+# 
+# https://schema.org/priceSpecification#teaches
+<https://schema.org/priceSpecification#teaches> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://schema.org/priceSpecification#teaches> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Entrenador> .
+<https://schema.org/priceSpecification#teaches> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte> .
+<https://schema.org/priceSpecification#teaches> <http://www.w3.org/2000/01/rdf-schema#label> "Enseña"@es .
+<https://schema.org/priceSpecification#teaches> <http://www.w3.org/2000/01/rdf-schema#label> "Teaches"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2006/vcard/ns#country-name
+<http://www.w3.org/2006/vcard/ns#country-name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/vcard/ns#country-name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/2006/vcard/ns#country-name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/vcard/ns#Address> .
+<http://www.w3.org/2006/vcard/ns#country-name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2006/vcard/ns#locality
+<http://www.w3.org/2006/vcard/ns#locality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/vcard/ns#locality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/2006/vcard/ns#locality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/vcard/ns#Address> .
+<http://www.w3.org/2006/vcard/ns#locality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2006/vcard/ns#postal-code
+<http://www.w3.org/2006/vcard/ns#postal-code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/vcard/ns#postal-code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/2006/vcard/ns#postal-code> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/vcard/ns#Address> .
+<http://www.w3.org/2006/vcard/ns#postal-code> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.w3.org/2006/vcard/ns#region
+<http://www.w3.org/2006/vcard/ns#region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/vcard/ns#region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.w3.org/2006/vcard/ns#region> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/vcard/ns#Address> .
+<http://www.w3.org/2006/vcard/ns#region> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.w3.org/2006/vcard/ns#street-address
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2006/vcard/ns#Address> .
+<http://www.w3.org/2006/vcard/ns#street-address> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# https://schema.org/priceSpecification#hasCurrency
+<https://schema.org/priceSpecification#hasCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/priceSpecification#hasCurrency> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/priceSpecification#PriceSpecification> .
+<https://schema.org/priceSpecification#hasCurrency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/priceSpecification#hasCurrency> <http://www.w3.org/2000/01/rdf-schema#comment> "Has currency"@en .
+<https://schema.org/priceSpecification#hasCurrency> <http://www.w3.org/2000/01/rdf-schema#comment> "Tiene divisa"@es .
+# 
+# https://schema.org/priceSpecification#hasEmail
+<https://schema.org/priceSpecification#hasEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/priceSpecification#hasEmail> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#unionOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/priceSpecification#hasEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://schema.org/priceSpecification#hasEmail> <http://www.w3.org/2000/01/rdf-schema#comment> "Has email"@en .
+<https://schema.org/priceSpecification#hasEmail> <http://www.w3.org/2000/01/rdf-schema#comment> "Tiene email"@es .
+# 
+# https://schema.org/priceSpecification#hasPrice
+<https://schema.org/priceSpecification#hasPrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/priceSpecification#hasPrice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/priceSpecification#PriceSpecification> .
+<https://schema.org/priceSpecification#hasPrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<https://schema.org/priceSpecification#hasPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Has price"@en .
+<https://schema.org/priceSpecification#hasPrice> <http://www.w3.org/2000/01/rdf-schema#comment> "Tiene precio"@es .
+# 
+# https://schema.org/priceSpecification#hasTelephoneNumber
+<https://schema.org/priceSpecification#hasTelephoneNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://schema.org/priceSpecification#hasTelephoneNumber> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#unionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/priceSpecification#hasTelephoneNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<https://schema.org/priceSpecification#hasTelephoneNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Has telephone number"@en .
+<https://schema.org/priceSpecification#hasTelephoneNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Tiene numero de telefono"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/Action
+<http://schema.org/Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Alquiler_de_pista_de_padel
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Alquiler_de_pista_de_padel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Alquiler_de_pista_de_padel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Alquiler_de_pista_de_padel> <http://www.w3.org/2000/01/rdf-schema#label> "Alquiler de pista de padel"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Alquiler_de_pista_de_padel> <http://www.w3.org/2000/01/rdf-schema#label> "Paddle court rental"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica> <http://www.w3.org/2000/01/rdf-schema#label> "Aquatic area"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAcuatica> <http://www.w3.org/2000/01/rdf-schema#label> "Area acuatica"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea> <http://www.w3.org/2000/01/rdf-schema#label> "Air area"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaAerea> <http://www.w3.org/2000/01/rdf-schema#label> "Area aerea"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoSingular> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva> <http://www.w3.org/2000/01/rdf-schema#label> "Area de actividad deportiva"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva> <http://www.w3.org/2000/01/rdf-schema#label> "Sports activity area"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaDeActividadDeportiva> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre> <http://www.w3.org/2000/01/rdf-schema#label> "Area terrestre"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#AreaTerrestre> <http://www.w3.org/2000/01/rdf-schema#label> "Land area"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_de_tenis
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_de_tenis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_de_tenis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_de_tenis> <http://www.w3.org/2000/01/rdf-schema#label> "10 tenis classes pack"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_de_tenis> <http://www.w3.org/2000/01/rdf-schema#label> "Bono 10 clases de tenis"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_zumba
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_zumba> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_zumba> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_zumba> <http://www.w3.org/2000/01/rdf-schema#label> "10 zumba classes pack"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Bono_10_clases_zumba> <http://www.w3.org/2000/01/rdf-schema#label> "Bono 10 clases zumba"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo> <http://www.w3.org/2000/01/rdf-schema#label> "Campo"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Campo> <http://www.w3.org/2000/01/rdf-schema#label> "Field"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Clase_individual_de_baloncesto
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Clase_individual_de_baloncesto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Clase_individual_de_baloncesto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Clase_individual_de_baloncesto> <http://www.w3.org/2000/01/rdf-schema#label> "Clase individual de baloncesto"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Clase_individual_de_baloncesto> <http://www.w3.org/2000/01/rdf-schema#label> "Individual basketball class"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Party> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente> <http://www.w3.org/2000/01/rdf-schema#label> "Client"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Cliente> <http://www.w3.org/2000/01/rdf-schema#label> "Cliente"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte> <http://www.w3.org/2000/01/rdf-schema#label> "Deporte"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Deporte> <http://www.w3.org/2000/01/rdf-schema#label> "Sport"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Entrenador
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Entrenador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Entrenador> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Entrenador> <http://www.w3.org/2000/01/rdf-schema#label> "Coach"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Entrenador> <http://www.w3.org/2000/01/rdf-schema#label> "Entrenador"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar> <http://www.w3.org/2000/01/rdf-schema#label> "Auxiliary space"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioAuxiliar> <http://www.w3.org/2000/01/rdf-schema#label> "Espacio auxiliiar"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario> <http://www.w3.org/2000/01/rdf-schema#label> "Complementary space"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario> <http://www.w3.org/2000/01/rdf-schema#label> "Espacio Complementario"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioEspecifico
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioEspecifico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioEspecifico> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioEspecifico> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioGeneral> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioEspecifico> <http://www.w3.org/2000/01/rdf-schema#label> "Espacio complementario auxiliar"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioEspecifico> <http://www.w3.org/2000/01/rdf-schema#label> "Specific complementary space"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioGeneral
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioGeneral> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioGeneral> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementario> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioGeneral> <http://www.w3.org/2000/01/rdf-schema#label> "Espacio complementario general"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioComplementarioGeneral> <http://www.w3.org/2000/01/rdf-schema#label> "General complementary space"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo> <http://www.w3.org/2000/01/rdf-schema#label> "Espacio deportivo"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo> <http://www.w3.org/2000/01/rdf-schema#label> "Sports area"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional> <http://www.w3.org/2000/01/rdf-schema#label> "Conventional sports area"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional> <http://www.w3.org/2000/01/rdf-schema#label> "Espacio deportivo convencional"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoSingular
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoSingular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoSingular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivo> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoSingular> <http://www.w3.org/2000/01/rdf-schema#label> "Espacio deportivo singular"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoSingular> <http://www.w3.org/2000/01/rdf-schema#label> "Singular sports space"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal> <http://www.w3.org/2000/01/rdf-schema#label> "Espacio longitudinal"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioLongitudinal> <http://www.w3.org/2000/01/rdf-schema#label> "Longitudinal space"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Geolocalizacion
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Geolocalizacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Site> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> <http://www.w3.org/2000/01/rdf-schema#comment> "Una instalacion deportiva tiene un nombre, direccion, numero de telefono, email y horario (ontologia time:)"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> <http://www.w3.org/2000/01/rdf-schema#label> "Instalacion deportiva"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva> <http://www.w3.org/2000/01/rdf-schema#label> "Sport facility"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Limpiador
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Limpiador> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Limpiador> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Limpiador> <http://www.w3.org/2000/01/rdf-schema#label> "Cleaner"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Limpiador> <http://www.w3.org/2000/01/rdf-schema#label> "Limpiador"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Monitor
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Monitor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Monitor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Person> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Monitor> <http://www.w3.org/2000/01/rdf-schema#label> "Instructor"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Monitor> <http://www.w3.org/2000/01/rdf-schema#label> "Monitor"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion> <http://www.w3.org/2000/01/rdf-schema#label> "Organizacion"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Organizacion> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina> <http://www.w3.org/2000/01/rdf-schema#label> "Piscina"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina> <http://www.w3.org/2000/01/rdf-schema#label> "Swimming pool"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista> <http://www.w3.org/2000/01/rdf-schema#label> "Court"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Pista> <http://www.w3.org/2000/01/rdf-schema#label> "Pista"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#EspacioDeportivoConvencional> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala> <http://www.w3.org/2000/01/rdf-schema#label> "Indoor"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Sala> <http://www.w3.org/2000/01/rdf-schema#label> "Sala"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio> <http://www.w3.org/2000/01/rdf-schema#label> "Service"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio> <http://www.w3.org/2000/01/rdf-schema#label> "Servicio"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono> <http://www.w3.org/2002/07/owl#disjointWith> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono> <http://www.w3.org/2000/01/rdf-schema#label> "Bono de servicios"@es .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono> <http://www.w3.org/2000/01/rdf-schema#label> "Service pack"@en .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Servicio> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual> <http://www.w3.org/2000/01/rdf-schema#label> "Individual service"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual> <http://www.w3.org/2000/01/rdf-schema#label> "Servicio individual"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido> <http://www.w3.org/2000/01/rdf-schema#label> "Offered service"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido> <http://www.w3.org/2000/01/rdf-schema#label> "Servicio ofrecido"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Suscripcion_mensual_sala_musculacion
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Suscripcion_mensual_sala_musculacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Suscripcion_mensual_sala_musculacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioBono> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Suscripcion_mensual_sala_musculacion> <http://www.w3.org/2000/01/rdf-schema#label> "Monthly subscription to a weight room"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Suscripcion_mensual_sala_musculacion> <http://www.w3.org/2000/01/rdf-schema#label> "Suscripción mensual de sala de musculación"@es .
+# 
+# http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vale_de_24_horas_sala_musculación
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vale_de_24_horas_sala_musculación> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vale_de_24_horas_sala_musculación> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioIndividual> .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vale_de_24_horas_sala_musculación> <http://www.w3.org/2000/01/rdf-schema#label> "24 hour voucher for weight room"@en .
+<http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Vale_de_24_horas_sala_musculación> <http://www.w3.org/2000/01/rdf-schema#label> "Vale de 24 horas sala de musculacion"@en .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#Point
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#comment> " \nUniquely identified by lat/long/alt. i.e.\n\nspaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),\n  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).\n\nsameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).\n  " .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#comment> "A point, typically described using a coordinate system relative to Earth, such as WGS84.\n  " .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#label> "point" .
+# 
+# http://www.w3.org/2006/vcard/ns#Address
+<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#unionOf> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid28 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/vcard/ns#street-address> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/vcard/ns#street-address> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid34 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
+_:genid36 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/vcard/ns#region> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid38 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/vcard/ns#region> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid40 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/vcard/ns#postal-code> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/vcard/ns#postal-code> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid46 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/vcard/ns#locality> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid50 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/vcard/ns#locality> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid52 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2002/07/owl#maxCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/vcard/ns#country-name> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#string> .
+_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2006/vcard/ns#country-name> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/2000/01/rdf-schema#comment> "To specify the components of the delivery address for the  object"@en .
+<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#Address> <http://www.w3.org/2000/01/rdf-schema#label> "Address"@en .
+# 
+# http://www.w3.org/2006/vcard/ns#Email
+<http://www.w3.org/2006/vcard/ns#Email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/vcard/ns#Email> <http://www.w3.org/2000/01/rdf-schema#comment> "To specify the electronic mail address for communication with the object the vCard represents. Use the hasEmail object property."@en .
+<http://www.w3.org/2006/vcard/ns#Email> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#Email> <http://www.w3.org/2000/01/rdf-schema#label> "Email"@en .
+<http://www.w3.org/2006/vcard/ns#Email> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.w3.org/2006/vcard/ns#Name
+<http://www.w3.org/2006/vcard/ns#Name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/vcard/ns#Name> <http://www.w3.org/2000/01/rdf-schema#comment> "To specify the components of the name of the object"@en .
+<http://www.w3.org/2006/vcard/ns#Name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#Name> <http://www.w3.org/2000/01/rdf-schema#label> "Name"@en .
+# 
+# http://www.w3.org/2006/vcard/ns#Tel
+<http://www.w3.org/2006/vcard/ns#Tel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2006/vcard/ns#Tel> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is deprecated. Use the hasTelephone object property."@en .
+<http://www.w3.org/2006/vcard/ns#Tel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/2006/vcard/ns> .
+<http://www.w3.org/2006/vcard/ns#Tel> <http://www.w3.org/2000/01/rdf-schema#label> "Tel"@en .
+<http://www.w3.org/2006/vcard/ns#Tel> <http://www.w3.org/2002/07/owl#deprecated> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.w3.org/ns/odrl/2/Action
+<http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Action> .
+<http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action"@en .
+<http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/2004/02/skos/core#definition> "An operation on an Asset."@en .
+<http://www.w3.org/ns/odrl/2/Action> <http://www.w3.org/2004/02/skos/core#note> "Actions may be allowed by Permissions, disallowed by Prohibitions, or made mandatory by Duties."@en .
+# 
+# http://www.w3.org/ns/odrl/2/Asset
+<http://www.w3.org/ns/odrl/2/Asset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Asset> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<http://www.w3.org/ns/odrl/2/Asset> <http://www.w3.org/2000/01/rdf-schema#label> "Asset"@en .
+<http://www.w3.org/ns/odrl/2/Asset> <http://www.w3.org/2004/02/skos/core#definition> "A resource or a collection of resources that are the subject of a Rule."@en .
+<http://www.w3.org/ns/odrl/2/Asset> <http://www.w3.org/2004/02/skos/core#note> "The Asset entity can be any form of identifiable resource, such as data/information, content/media, applications, or services. Furthermore, it can be used to represent other Asset entities that are needed to undertake the Policy expression, such as with the Duty entity. To describe more details about the Asset, it is recommended to use Dublin Core [[dcterms]] elements or other content metadata."@en .
+# 
+# http://www.w3.org/ns/odrl/2/Constraint
+<http://www.w3.org/ns/odrl/2/Constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Constraint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<http://www.w3.org/ns/odrl/2/Constraint> <http://www.w3.org/2000/01/rdf-schema#label> "Constraint"@en .
+<http://www.w3.org/ns/odrl/2/Constraint> <http://www.w3.org/2004/02/skos/core#definition> "A boolean expression that refines the semantics of an Action and Party/Asset Collection or declare the conditions applicable to a Rule."@en .
+# 
+# http://www.w3.org/ns/odrl/2/Party
+<http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/2000/01/rdf-schema#label> "Party"@en .
+<http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/2004/02/skos/core#definition> "An entity or a collection of entities that undertake Roles in a Rule."@en .
+<http://www.w3.org/ns/odrl/2/Party> <http://www.w3.org/2004/02/skos/core#note> "The Party entity could be a person, group of people, organisation, or agent. An agent is a person or thing that takes an active role or produces a specified effect. To describe more details about the Party, it is recommended to use W3C vCard Ontology [[vcard-rdf]] or FOAF Vocabulary [[foaf]]."@en .
+# 
+# http://www.w3.org/ns/odrl/2/Rule
+<http://www.w3.org/ns/odrl/2/Rule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/odrl/2/Rule> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/odrl/2/> .
+<http://www.w3.org/ns/odrl/2/Rule> <http://www.w3.org/2000/01/rdf-schema#label> "Rule"@en .
+<http://www.w3.org/ns/odrl/2/Rule> <http://www.w3.org/2004/02/skos/core#definition> "An abstract concept that represents the common characteristics of Permissions, Prohibitions, and Duties."@en .
+<http://www.w3.org/ns/odrl/2/Rule> <http://www.w3.org/2004/02/skos/core#note> "Rule is an abstract concept."@en .
+# 
+# http://www.w3.org/ns/org#Membership
+<http://www.w3.org/ns/org#Membership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/org#Membership> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/org#Organization> .
+<http://www.w3.org/ns/org#Membership> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/org#Role> .
+<http://www.w3.org/ns/org#Membership> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/org#Site> .
+<http://www.w3.org/ns/org#Membership> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica la natura della relazione di appartenenza di un Agent in un'organizzazione. Rappresenta una relazione n-aria tra un'Agent, un Organization e un Role. È possibile indicare direttamente la membership, indipendentemente dallo specifico Role, attraverso l'uso della proprietà `org:memberOf`"@it .
+<http://www.w3.org/ns/org#Membership> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the nature of an Agent's membership of an organization. Represents an n-ary relation between an Agent, an Organization and a Role. It is possible to directly indicate membership, independent of the specific Role, through use of the `org:memberOf` property."@en .
+<http://www.w3.org/ns/org#Membership> <http://www.w3.org/2000/01/rdf-schema#comment> "Indique la nature de l'engagement d'un Agent dans une Organisation. Représente une relation n-aire entre un Agent, une Organisation et un Role. Il est possible d'indiquer directement l'appartenance à une organisation, independemment d'un rôle spécifique, à travers l'usage de la propriété `org:memberOf`."@fr .
+<http://www.w3.org/ns/org#Membership> <http://www.w3.org/2000/01/rdf-schema#comment> "Pertenencia o afiliación de un agente a una organización. Es una relación n-aria entre un agente, una organización y una actividad. Es posible indicar pertenencia mediante el uso de la propiedad `org:memberOf`, independientemente de la actividad específica que se desempeñe."@es .
+<http://www.w3.org/ns/org#Membership> <http://www.w3.org/2000/01/rdf-schema#comment> "組織のエージェントの構成員の本質を示します。"@ja .
+<http://www.w3.org/ns/org#Membership> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/org> .
+<http://www.w3.org/ns/org#Membership> <http://www.w3.org/2000/01/rdf-schema#label> "Appartenenza"@it .
+<http://www.w3.org/ns/org#Membership> <http://www.w3.org/2000/01/rdf-schema#label> "Engagement"@fr .
+<http://www.w3.org/ns/org#Membership> <http://www.w3.org/2000/01/rdf-schema#label> "Membership"@en .
+<http://www.w3.org/ns/org#Membership> <http://www.w3.org/2000/01/rdf-schema#label> "membresía"@es .
+# 
+# http://www.w3.org/ns/org#Organization
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/org#Site> .
+# 
+# http://www.w3.org/ns/org#Post
+<http://www.w3.org/ns/org#Post> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/org#Role
+<http://www.w3.org/ns/org#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/org#Role> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3.org/ns/org#Site> .
+# 
+# http://www.w3.org/ns/org#Site
+<http://www.w3.org/ns/org#Site> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/org#Site> <http://www.w3.org/2000/01/rdf-schema#comment> "An office or other premise at which the organization is located. Many organizations are spread across multiple sites and many sites will host multiple locations. In most cases a Site will be a physical location. However, we don't exclude the possibility of non-physical sites such as a virtual office with an associated post box and phone reception service. Extensions may provide subclasses to denote particular types of site."@en .
+<http://www.w3.org/ns/org#Site> <http://www.w3.org/2000/01/rdf-schema#comment> "Oficina, local o cualquier otro lugar en el que se encuentra una organización. Muchas organizaciones están distribuidas en varias sedes, que a su vez están repartidas en distintas ubicaciones. En muchos casos una sede será un sitio o local físico. Sin embargo, no se excluye la posibilidad de lugares no físicos como oficinas virtuales con los correspondientes apartados de correo y servicio de atención telefónica. Se pueden añadir más subtipos mediante extensiones para incluir tipos especiales de lugares."@es .
+<http://www.w3.org/ns/org#Site> <http://www.w3.org/2000/01/rdf-schema#comment> "Un ufficio o altra sede dovei l'organizzazione è situata. Molte organizzazione sono distribuite su più sedi e molte sedi ospitano più ubicazioni. Nella maggior parte dei casi un Site è una locazione fisica. Non si esclude la possibilità di indicare sedi non fisiche come ad esempio gli uffici virtuali. Le estensioni dell'ontologia potrebbero usare delle sottoclassi per rappresentare i tipi particolari di sede."@it .
+<http://www.w3.org/ns/org#Site> <http://www.w3.org/2000/01/rdf-schema#comment> "Un établissement ou tout autre lieu dans lequel une Organisation est localisé. Beaucoup d'organisations sont dispersées à travers plusieurs sites. Dans la plupart des cas un Site sera un lieu physique. Toutefois, nous n'excluons pas la possibilité de sites non-physiques comme un bureau virtuel avec une boîte postale et un service de secrétariat mutualisé. Des extensions pourraient fournir des sous-classes pour décrire des types de sites particuliers."@fr .
+<http://www.w3.org/ns/org#Site> <http://www.w3.org/2000/01/rdf-schema#comment> "組織が位置するオフィスやその他の敷地。多くの組織が複数のサイトに散在しており、多くのサイトが多数の場所を持つでしょう。"@ja .
+<http://www.w3.org/ns/org#Site> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/org> .
+<http://www.w3.org/ns/org#Site> <http://www.w3.org/2000/01/rdf-schema#label> "Sede"@it .
+<http://www.w3.org/ns/org#Site> <http://www.w3.org/2000/01/rdf-schema#label> "Site"@en .
+<http://www.w3.org/ns/org#Site> <http://www.w3.org/2000/01/rdf-schema#label> "Site"@fr .
+<http://www.w3.org/ns/org#Site> <http://www.w3.org/2000/01/rdf-schema#label> "sede"@es .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# https://schema.org/priceSpecification#Gorro_de_baño
+<https://schema.org/priceSpecification#Gorro_de_baño> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/priceSpecification#Gorro_de_baño> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Asset> .
+<https://schema.org/priceSpecification#Gorro_de_baño> <http://www.w3.org/2000/01/rdf-schema#label> "Gorro de baño"@es .
+<https://schema.org/priceSpecification#Gorro_de_baño> <http://www.w3.org/2000/01/rdf-schema#label> "Swimming cap"@en .
+# 
+# https://schema.org/priceSpecification#Llevar_puesto
+<https://schema.org/priceSpecification#Llevar_puesto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/priceSpecification#Llevar_puesto> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Action> .
+<https://schema.org/priceSpecification#Llevar_puesto> <http://www.w3.org/2000/01/rdf-schema#label> "Llevar puesto"@es .
+<https://schema.org/priceSpecification#Llevar_puesto> <http://www.w3.org/2000/01/rdf-schema#label> "Wearing"@en .
+# 
+# https://schema.org/priceSpecification#Obligatorio_el_uso_de_gorro_de_baño
+<https://schema.org/priceSpecification#Obligatorio_el_uso_de_gorro_de_baño> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/priceSpecification#Obligatorio_el_uso_de_gorro_de_baño> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/odrl/2/Rule> .
+<https://schema.org/priceSpecification#Obligatorio_el_uso_de_gorro_de_baño> <http://www.w3.org/2000/01/rdf-schema#label> "Obligatorio el uso de gorro de baño"@es .
+<https://schema.org/priceSpecification#Obligatorio_el_uso_de_gorro_de_baño> <http://www.w3.org/2000/01/rdf-schema#label> "Use of bathing cap is mandatory"@en .
+# 
+# https://schema.org/priceSpecification#Piscina_Olimpica
+<https://schema.org/priceSpecification#Piscina_Olimpica> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/priceSpecification#Piscina_Olimpica> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid57 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/odrl/2/Constraint> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Piscina> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://schema.org/priceSpecification#Piscina_Olimpica> <http://www.w3.org/2000/01/rdf-schema#label> "Olympic pool"@en .
+<https://schema.org/priceSpecification#Piscina_Olimpica> <http://www.w3.org/2000/01/rdf-schema#label> "Piscina olimpica"@es .
+# 
+# https://schema.org/priceSpecification#PriceSpecification
+<https://schema.org/priceSpecification#PriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://schema.org/priceSpecification#PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta clase esta compuesta por dos propiedades, una de ellas es la cuantía y la otra la moneda usada. Estas propiedades están definidas mediante las relaciones hasPrice  y hasCurrency respectivamente."@es .
+<https://schema.org/priceSpecification#PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "This class is composed of two properties, one of them is the amount and the other is the currency used. These properties are defined by the relationships hasPrice and hasCurrency respectively."@en .
+<https://schema.org/priceSpecification#PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Especificacion del precio"@es .
+<https://schema.org/priceSpecification#PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Price specification"@es .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
