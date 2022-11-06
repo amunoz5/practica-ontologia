@@ -318,8 +318,6 @@
 		\caption{Esquema de las principales clases relacionadas con \textbf{Regla}.}
 	\end{figure}
 	
-	\section{Clases Multilingües}
-	
 	\section{Implementación de la ontología con OWL}
 	% Implement the ontology in an ontology development tool, or other ontology editor, using OWL as ontology language
 	
@@ -349,13 +347,15 @@
 	
 	Hemos importado la ontología Time de forma completa, ya que utilizábamos la totalidad de sus entidades. Al importar la ontología, nos hemos dado cuenta de que muchas de las propiedades estaban incompletas: les faltaba el rango o el dominio. Hemos optado por mantenerla como estaba, ya que muchos de estos problemas se debían a términos deprecados, y no hemos encontrado una versión más reciente de la ontología.
 	
+	Cabe destacar que todas las clases tienen etiquetas estilo \textit{label} en español e inglés.
+	
 	Una vez importadas las clases necesarias, hemos definido aquellas que nos hacían falta para completar nuestro modelo, que no se encontraban ni en el T-Box ni en las ontologías de alto nivel, como puede ser por ejemplo la clase Monitor, Entrenador, Pista de Baloncesto... \\
 		
 	Este mismo procedimiento lo hemos realizado para los Object Properties. En este caso, a demás de importar los necesarios de las diferentes ontologías y crear los que necesitabamos, hemos definido las propiedades de cada propiedad. \\
 		
 	Hemos tenido cierta dificultad a la hora de crear la propiedad Part Of, ya que tiene varios dominios para un único rango (tanto los espacios deportivos, como los complementarios y auxiliares son part of de una instalación deportiva). Para evitar interferencias, hemos incluido los diferentes dominios con la condición OR. 
 	
-	De forma similar hemos añadido los Data Properties. Estos en lugar de apuntar a una entidad, apuntan a un literal, por lo que hemos tenido que especificar los tipos de datos para literales como la divisa, el precio... Un caso particular ha sido la propiedad hasCeiling (tiene techo), para definir los Espacios Deportivos. En este caso el literal era un booleano. A continuación se muestran las diferentes Data Properties. \\
+	De forma similar hemos añadido los Data Properties. Estos en lugar de apuntar a una entidad, apuntan a un literal, por lo que hemos tenido que especificar los tipos de datos para literales como la divisa, el precio... Un caso particular ha sido la propiedad hasCeiling (tiene techo), para definir los Espacios Deportivos. En este caso el literal era un booleano.\\
 	
 	Finalmente, hemos completado las labels y comentarios de aquellas entidades que no han sido directamente importadas, asegurandonos de que estaban disponibles tanto en inglés como español. 
 	
@@ -375,21 +375,35 @@
 	\begin{itemize}
 		\item \textbf{P19:} Propiedades con múltiples rangos o dominios.
 		
-		Una de las relaciones definidas tenía más de un dominio, habiendo escrito en  accidentalmente \textit{and} en lugar de \textit{or} en el dominio. Este error fue solucionado.
+		Una de las relaciones definidas tenía más de un dominio, habiendo escrito en  accidentalmente \textit{and} en lugar de \textit{or} en el dominio.
+		
+		Los dominios de las relaciones \textit{time:hasDateTimeDescription} y \textit{time:hasTemporalDuration} fueron modificados añadiendo una entrada en sus dominios y eliminando la entrada de la ontología time. Esta modificación no fue aplicada por Protégé, y hubo que modificar la entrada del dominio impuesta por importar la ontología time para que el cambio quedase registrado.
+		
 		\item \textbf{P29:} Relaciones transitivas mal definidas.
 		
-		Las relaciones \textit{partOf}, \textit{hasService}, \textit{managed\_by} y \textit{constraint} estaban definidas como transitivas, teniendo rangos y dominios distintos. Por definición una propiedad transitiva debe tener el mismo rango y dominio. Este error fue solucionado.
+		Las relaciones \textit{partOf}, \textit{hasService}, \textit{managed\_by} y \textit{constraint} estaban definidas como transitivas, teniendo rangos y dominios distintos. Por definición una propiedad transitiva debe tener el mismo rango y dominio.
+		
+		En el caso de \textit{partOf}, una relación que generalmente es transitiva, decidimos eliminar esta propiedad, ya que para nuestro modelo aparece únicamente entre Instalación Deportiva y los espacios deportivos, complementarios y auxiliares, que nunca serán unos parte de otros.
+		
+		Las otras relaciones se encontraban en esta clasificación por un error en la transcripción a Protégé.
 	\end{itemize}
 	
-	Gracias a los errores destacados por OOPS! se pudieron solucionar todos los errores críticos y varios errores clasificados como importantes. Se decidió no solucionar los errores no críticos de las ontologías importadas debido a las restricciones temporales sobre la entrega del trabajo.
+	Las propiedades \textit{vcard:hasEmail} y \textit{vcard:hasTelephone} aparecen como propiedades sin rango (P11), marcado como error importante, por ser su rango una clase deprecada de la ontología vcard. Pese a estar deprecada, esto no es un error, por lo que no se solucionó el problema.
+	
+	Gracias a los errores destacados por OOPS! se pudieron solucionar todos los errores críticos y varios errores clasificados como importantes. Se decidió no solucionar los errores no críticos de las ontologías importadas debido a las restricciones temporales sobre la entrega del trabajo y a la prioridad que se impuso sobre la reutilización de esta ontología.
 	
 	\subsection{Resultados finales de la evaluación}
 	
-	Tras aplicar las correcciones sobre las sugerencias de OOPS! la ontología tiene \hl{xx} errores importantes y \hl{xx} errores menores.
-	Los resultados completos de esta evaluación se pueden encontrar en el Anexo.
+	Tras aplicar las correcciones sobre los errores críticos indicados por OOPS! la última versión de la ontología tiene $11$ errores importantes, $63$ errores menores y $16$ sugerencias, mientras que en su primera iteración tenía $8$ errores críticos, $12$ errores importantes y $70$ errores menores, así como $16$ sugerencias.
+	
+	Cabe destacar que aproximadamente el 40\% de los errores indicados originalmente por OOPS! estaban relacionados con la ontología importada time.
+	
+	Los resultados completos de ambas evaluaciones se pueden encontrar en el Anexo.
 	
 	\section{Documentación de la ontología}
 	% Document the ontology with Widoco and use Ontoology if required
+	
+	
 		
 	\cite{widoco}
 	
@@ -426,10 +440,21 @@
 		\caption{Data Properties presentes en la ontología.}
 	\end{figure}
 	
+	
 	\begin{figure}[H]
-		\centering
-		%\includegraphics[height=\textheight]{include/eval_final_oops.png}
-		\caption{Resultados finales de la evaluación con OOPS!}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[height=\textheight]{include/eval_inicial_oops.png}
+			\caption{Resultados iniciales de la evaluación con OOPS! }
+		\end{subfigure}
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\includegraphics[height=\textheight]{include/eval_final_oops.png}
+			\caption{Resultados finales de la evaluación con OOPS!}
+		\end{subfigure}
+		\caption{Diferentes resultados obtenidos de la evaluación con OOPS!}
 	\end{figure}
+	
+
 
 \end{document}
