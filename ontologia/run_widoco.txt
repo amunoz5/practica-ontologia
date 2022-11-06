@@ -1,2 +1,2 @@
-java -jar java-17-widoco-1.4.17-jar-with-dependencies.jar -ontFile '/home/debark/Downloads/ONTOLOGIA_INSTALACIONES_DEPORTIVAS_corregido2.owl' -getOntologyMetadata -oops -saveConfig '/home/debark/Downloads/probando.conf' -lang en-es -webVowl -uniteSections -includeAnnotationProperties
+java -jar java-17-widoco-1.4.17-jar-with-dependencies.jar -ontFile '/home/debark/Documents/practica-ontologia/ontologia/ONTOLOGIA_INSTALACIONES_DEPORTIVAS_corregido2.owl' -confFile '/home/debark/Documents/practica-ontologia/ontologia/ONTOLOGIA_INSTALACIONES_DEPORTIVAS_corregido2.conf' -lang en-es -uniteSections -includeAnnotationProperties
 
