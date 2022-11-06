@@ -12,6 +12,8 @@
 \usepackage{pdfpages}
 \usepackage{float} % para que las figuras no floten
 \usepackage{subcaption}
+\usepackage{soul} % para el highlight \hl
+\usepackage{pdfpages} % para pegar otro pdf dentro de este
 
 \textheight = 24 cm
 \textwidth = 17 cm
@@ -48,6 +50,18 @@
 	
 	\section{Planificación temporal de la ontología}
 	% Ontology Schedule. You should identify the ontology life cycle model you use in your ontology development. Activities should come from the glossary of terms. Include a Gantt chart with the planned activities.
+		
+	El ciclo de vida utilizado en el diseño y desarrollo de esta ontología es el ciclo de vida incremental, pudiéndose considerarse como la primera iteración de un modelo ágil.
+	
+	Se decidió utilizar un ciclo de vida incremental debido a las características del proyecto, ya que la ontología no fue diseñada a partir de un set de datos proporcionados por el cliente, si no que se realizó el modelado a partir de las posibles necesidades de sus usarios. 
+	
+	La planificación temporal se puede dividir en varias secciones. Durante la planificación de la ontología se buscó el ámbito sobre el que realizar el trabajo, un tema sobre el que no existiesen ontologías ya diseñadas, y se definieron los requisitos planteando las preguntas de competencia. Se diseñó la ontología reutilizando los recursos útiles encontrados plasmándolos en el modelo conceptual. A continuación se creó la implementación del modelo y su evaluación. La redacción de este documento se puede considerar un ejercicio transversal.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{include/gantt_ontologia.png}
+		\caption{Diagrama de Gantt de la planificación temporal seguida.}
+	\end{figure}
 	
 	\section{Búsqueda de ontologías de alto nivel}
 	% Search for existing top level and domain ontologies that you plan to reuse when building your ontology. Explain if you need to reuse the ontology as a whole or if you need some modules or statements. Explain in which repositories you made the search, ontologies found, their relevance to your work and the criteria being used for selecting or withdrawing some of them.
@@ -55,8 +69,31 @@
 	\section{Recursos no ontológicos}
 	%Search for non ontological resources and other terminologies that could be transformed into ontologies. Keep track of the URLs where you found them. For the selected resources, do not forget to justify why you have selected them. Check if you have Access rights for using them within your hands-on assigment.
 	
+	Una de las fuentes de información utilizadas para generar la ontología propuesta en este documento es el siguiente informe \cite{pdf-culturaydeporte}. A partir de este recurso no ontológico, mediante el uso de un T-Box se pudo realizar una modelización de la información descrita que representa la estructura taxonómica del documento en esta ontología de instalaciones deportivas. 
+	
+	El documento \cite{pdf-culturaydeporte} del Ministerio de Cultura y Deporte del Gobierno de España, contiene los  principales resultados del informe de explotación estadística del censo de instalaciones deportivas de 2005, así como las definiciones de las diferentes clases de instalaciones deportivas consideradas durante el censo.
+	
+	Al plasmar el conocimiento presente en este documento en el modelo de la ontología mediante un T-Box, se decidió mantener las clases intermedias presentes en el documento como parte de la ontología pese a que serán probablemente rara vez utilizadas para mantener la estructura del documento mencionado y facilitar la reutilización de este. 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\textwidth]{include/tbox.png}
+		\caption{Sección correspondiente a los recursos no ontológicos en la ontología.}
+	\end{figure}
+	
+	Es importante señalar que la estructura taxonómica del documento descrito exige desambiguar entre las relaciones "sub-clase de" (\textit{sc} en el diagrama) y "parte de" (\textit{PoF} en el diagrama).
+	
 	\section{Patrones en la ontología}
 	% Search for some ontology design patterns in the ontology design pattern portal that could be reused in your development.
+	
+	Para facilitar el diseño de los servicios ofrecidos por la organización en una instalación deportiva, se reutilizó el patrón de una relación N-aria según lo visto en clase. Este patrón se utiliza para representar una relación N-aria en el que todos los elementos tienen la misma importancia. Para representar esta relación N-aria se crea una clase, en nuestra ontología la clase \textit{ServicioOfrecido}, a la que asociar todos los atributos de la relación.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\textwidth]{include/patron.png}
+		\caption{Sección correspondiente a los patrones utilizados en el diseño de la ontología.}
+	\end{figure}
+	
 	
 	\section{Modelo conceptual}
 	% Build a conceptual model that integrates outcomes from the previous sections (c,d,e). This is the most important part of the work you are doing. Try to use:
@@ -72,12 +109,35 @@
 	
 	\section{Evaluación de la ontología con OOPS!}
 	% Evaluate the ontology with OOPS! and include in your report the pitfalls found. It is highly advisable to combine this evaluation with other ontology evaluation techniques.
-	
-	\section{Evaluación. Mejoras propuestas}
 	% Improve your ontology (conceptual model and implementation) taking into account the suggestions given by OOPS!. Iterate in these steps until the ontology pass most of the OOPS! recommedations.
+	La ontología diseñada se ha evaluado utilizando la herrramienta OntOlogy Pitfall Scanner! (OOPS!)\cite{oops}, que identifica errores en la ontología dividiéndolos en críticos, importantes y menores, de acuerdo a una batería errores comunes.
+	
+	\subsection{Mejoras implementadas tras la sugerencia de OOPS!}
+	
+	Tras la primera iteración de la evaluación con OOPS!, la herramienta destacó los siguientes problemas críticos:
+	
+	\begin{itemize}
+		\item \textbf{P19:} Propiedades con múltiples rangos o dominios.
+		
+		Una de las relaciones definidas tenía más de un dominio, habiendo escrito en Protegé accidentalmente \textit{and} en lugar de \textit{or} en el dominio. Este error fue solucionado.
+		\item \textbf{P29:} Relaciones transitivas mal definidas.
+		
+		Las relaciones \textit{partOf}, \textit{hasService}, \textit{managed\_by} y \textit{constraint} estaban definidas como transitivas, teniendo rangos y dominios distintos. Por definición una propiedad transitiva debe tener el mismo rango y dominio. Este error fue solucionado.
+	\end{itemize}
+	
+	Gracias a los errores destacados por OOPS! se pudieron solucionar todos los errores críticos y varios errores clasificados como importantes. Se decidió no solucionar los errores no críticos de las ontologías importadas debido a las restricciones temporales sobre la entrega del trabajo.
+	
+	\subsection{Resultados finales de la evaluación}
+	
+	Tras aplicar las correcciones sobre las sugerencias de OOPS! la ontología tiene \hl{xx} errores importantes y \hl{xx} errores menores.
+	Los resultados completos de esta evaluación se pueden encontrar en el Anexo.
 	
 	\section{Documentación de la ontología}
 	% Document the ontology with Widoco and use Ontoology if required
+		
+	\cite{widoco}
+	
+	%\includepdf[pages=-]{include/documentation-widoco.pdf}
 	
 	\section{Conclusiones}
 	
@@ -87,5 +147,13 @@
 	\addcontentsline{toc}{section}{Bibliografía}
 	\bibliography{include/references}
 	\bibliographystyle{IEEEtran}
+	
+	\newpage
+	\section*{Anexos}
+	\begin{figure}[H]
+		\centering
+		%\includegraphics[height=\textheight]{include/eval_final_oops.png}
+		\caption{Resultados finales de la evaluación con OOPS!}
+	\end{figure}
 
 \end{document}
