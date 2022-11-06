@@ -37,37 +37,6 @@
     
 
 
-    <!-- http://www.w3.org/2006/time#hasDateTimeDescription -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2006/time#hasDateTimeDescription">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
-                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido"/>
-                    <rdf:Description rdf:about="http://www.w3.org/2006/time#DateTimeInterval"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-    </rdf:Description>
-    
-
-
-    <!-- http://www.w3.org/2006/time#hasTemporalDuration -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2006/time#hasTemporalDuration">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido"/>
-                    <rdf:Description rdf:about="http://www.w3.org/2006/time#TemporalEntity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-    </rdf:Description>
-    
-
-
     <!-- http://www.w3.org/2006/vcard/ns#hasAddress -->
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/2006/vcard/ns#hasAddress">
@@ -399,7 +368,6 @@
 
     <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#partOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
