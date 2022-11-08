@@ -38,20 +38,45 @@
 	\section{Introducción}
 	% Introduction. High level overview of the ontology you plan to develop and brief description of the datasets and web pages that you plan to use.
 		
-	En el contexto de la iniciativa OpenCityData \cite{opencitydata} y del proyectoCiudades Abiertas \cite{ciudadesabiertas} se han desarrollado un buen número deontologías que permitan representar datos abiertos de ciudades, en muy diversas áreas (transporte,gestión económica, equipamientos, servicios, etc.). Dentro de esta iniciativa se encuentranmuchas áreas todavía por desarrollar, y es una de ellas en las que se enmarca el desarrollo deeste trabajo.
+	En el contexto de la iniciativa OpenCityData \cite{opencitydata} y del proyecto
+Ciudades Abiertas \cite{ciudadesabiertas} se han desarrollado un buen número de
+ontologías que permitan representar datos abiertos de ciudades, en muy diversas áreas (transporte,
+gestión económica, equipamientos, servicios, etc.). Dentro de esta iniciativa se encuentran
+muchas áreas todavía por desarrollar, y es una de ellas en las que se enmarca el desarrollo de
+este trabajo.
 	
-	El objetivo es diseñar e implementar una ontología que represente de manera adecuadainstalaciones deportivas, sus características y acciones relacionadas. Las ontologías y otrasfuentes de conocimiento utilizadas durante el desarrollo de este trabajo serán citadas, y se puedeacceder a ellas a través de los hipervínculos de la bibliografía.La ontología por desarrollar constituirá un modelo para representar los datos asociados a unainstalación deportiva, donde se entiende como instalación deportiva un recinto o construcción provista de los medios necesarios para la práctica, aprendizaje y competición de uno o másdeportes, y que está asociada, organizada y mantenida por una determinada organización. Comoiremos describiendo en los siguientes apartados de la memoria, se especificarán todos losrequisitos necesarios para la creación de la ontología, y se detallarán todas las características deesta.
+	El objetivo es diseñar e implementar una ontología que represente de manera adecuada
+instalaciones deportivas, sus características y acciones relacionadas. Las ontologías y otras
+fuentes de conocimiento utilizadas durante el desarrollo de este trabajo serán citadas, y se puede
+acceder a ellas a través de los hipervínculos de la bibliografía.
+La ontología por desarrollar constituirá un modelo para representar los datos asociados a una
+instalación deportiva, donde se entiende como instalación deportiva un recinto o construcción provista de los medios necesarios para la práctica, aprendizaje y competición de uno o más
+deportes, y que está asociada, organizada y mantenida por una determinada organización. Como
+iremos describiendo en los siguientes apartados de la memoria, se especificarán todos los
+requisitos necesarios para la creación de la ontología, y se detallarán todas las características de
+esta.
 	
-	A la hora de la creación de la ontología se han seguido las pautas que marca la metodología NeOn,haciendo uso tanto de recursos ontológicos como no ontológicos para su reutilización yreingeniería. Cada una de las actividades de la metodología ha sido realizada según la secuenciaespecificada y con un planteamiento ordenado. Tras ello, se ha usado la herramienta Protégé parala formalización en OWL de la ontología, OOPS! para su evaluación y WIDOCO para su documentación.
+	A la hora de la creación de la ontología se han seguido las pautas que marca la metodología NeOn,
+haciendo uso tanto de recursos ontológicos como no ontológicos para su reutilización y
+reingeniería. Cada una de las actividades de la metodología ha sido realizada según la secuencia
+especificada y con un planteamiento ordenado. Tras ello, se ha usado la herramienta Protégé para
+la formalización en OWL de la ontología, OOPS! para su evaluación y WIDOCO para su documentación.
 	
 	\section{Metodología NeOn}
 	% Make a short overview of the NeOn methodology making explicit:
 	%   a. which scenarios you plan to follow
 	%   b. which activities from the glossary of activities you plan to execute in your ontology development project
 	
-	La Metodología NeOn para la construcción de redes de ontologías es una metodología basada enescenarios que se apoya en los aspectos de colaboración de desarrollo de ontologías y lareutilización, así como en la evolución dinámica de las redes de ontologías en entornosdistribuidos\cite{oeg-neon}.
+	La Metodología NeOn para la construcción de redes de ontologías es una metodología basada en
+escenarios que se apoya en los aspectos de colaboración de desarrollo de ontologías y la
+reutilización, así como en la evolución dinámica de las redes de ontologías en entornos
+distribuidos
+\cite{oeg-neon}.
 	
-	Como define esta metodología, hay un conjunto de nueve escenarios para la construcción deontologías, haciendo hincapié en la reutilización de recursos ontológicos, la reingeniería y lafusión. Para este trabajo se han seguido lossiguientes escenarios:
+	Como define esta metodología, hay un conjunto de nueve escenarios para la construcción de
+ontologías, haciendo hincapié en la reutilización de recursos ontológicos, la reingeniería y la
+fusión. Para este trabajo se han seguido los
+siguientes escenarios:
 	\begin{itemize}
 		\item \textbf{Escenario 2: La reutilización y reingeniería de recursos no ontológicos (NOR).}
 		Se llevan a cabo procesos de reutilización NOR para decidir, en base a los requisitos definidos, qué recursos no ontológicos se utilizarán para construir la red de la ontología. Posteriormente estos NOR se readaptarán mediante reingeniería.
@@ -78,19 +103,27 @@
 		requisitos definidos.
 		\item \textbf{Control.} Se siguió la planificación temporal prevista para completar las tareas de
 		desarrollo programadas.
-		\item \textbf{Ontology Design Pattern Reuse.} Se han reusaron patrones de diseño para estaontología, concretamente el patrón de Normas y el de Servicios.
-		\item \textbf{Ontology Diagnosis.} Gracias al uso de herramientas como OOPS! se pudieron evaluar losfallos de la ontología y corregirlos durante el proceso de desarrollo.
+		\item \textbf{Ontology Design Pattern Reuse.} Se han reusaron patrones de diseño para esta
+ontología, concretamente el patrón de Normas y el de Servicios.
+		\item \textbf{Ontology Diagnosis.} Gracias al uso de herramientas como OOPS! se pudieron evaluar los
+fallos de la ontología y corregirlos durante el proceso de desarrollo.
 		\item \textbf{Ontology Elicitation.} Se realizó una adquisición de estructuras conceptuales, como el T-Box, a partir de documentos de expertos del dominio de las instalaciones deportivas.
 		\item \textbf{Ontology Erichment.} Extendiendo el número de relaciones y clases de algunas de las ontologías reutilizadas se logró completarlas y cubrir ciertos requisitos.
 		\item \textbf{Ontology Implementation.} Una vez diseñado el modelo conceptual se transformó la ontología a un modelo formal (código OWL) gracias a Protégé.
-		\item \textbf{Ontology Localization.} Las entidades y relaciones creadas se etiquetaron tanto en españolcomo en inglés.
-		\item \textbf{Ontology Merging.} Se fusionaron clases y funciones de distintas ontologías para crearuna ontología nueva.
-		\item \textbf{Ontology Search.} Se realizó una búsqueda de ontologías o módulos de ontologíascandidatas a ser reutilizadas.
+		\item \textbf{Ontology Localization.} Las entidades y relaciones creadas se etiquetaron tanto en español
+como en inglés.
+		\item \textbf{Ontology Merging.} Se fusionaron clases y funciones de distintas ontologías para crear
+una ontología nueva.
+		\item \textbf{Ontology Search.} Se realizó una búsqueda de ontologías o módulos de ontologías
+candidatas a ser reutilizadas.
 		\item \textbf{Ontology Module Extraction.} Se extrajeron módulos concretos de ciertas ontologías.
 		\item \textbf{Ontology Module Reuse.} Se reutilizaron los módulos extraídos de otras ontologías.
-		\item \textbf{Non-Ontological Resource Reengineering.} Se reestructuraron recursos noontológicos para adaptarlos a la ontología.
-		\item \textbf{Non-Ontological Resource Reuse.} Se reusaron recursos no ontológicos paratransformarlos en partes de la ontología.
-		\item \textbf{Scheduling.} Se realizó una planificación de las actividades anteriores paracompletarlas en el orden correcto dentro del plazo de entrega y así llevar un control de las mismas.
+		\item \textbf{Non-Ontological Resource Reengineering.} Se reestructuraron recursos no
+ontológicos para adaptarlos a la ontología.
+		\item \textbf{Non-Ontological Resource Reuse.} Se reusaron recursos no ontológicos para
+transformarlos en partes de la ontología.
+		\item \textbf{Scheduling.} Se realizó una planificación de las actividades anteriores para
+completarlas en el orden correcto dentro del plazo de entrega y así llevar un control de las mismas.
 	\end{itemize}
 	
 	\section{Especificación de la ontología}
@@ -102,7 +135,10 @@
 	\subsection{Ámbito}
 	La definición de Instalaciones Deportivas puede llegar a ser ambigua, dado que existen multiples instalaciones donde se realizan deporte con un fin muy distinto: un estadio de futbol y un parque de barras podrían ser ambos considerados instalaciones deportivas.
 	
-	Nuestra ontología se enmarca en la definición propuesta por el informe estadístico de 2022 publicado por el Ministerio de Educación, Cultura y Deporte, donde se proporcionan indicadores estadísticos para estimar las dimensiones y características de las infraestructuras en España. En el documento, se define instalación deportiva como: 'Instalaciones destinadas aldeporte que incluyen uno o varios espaciosdeportivos donde puede desarrollarse la actividadfísico-deportiva.'.
+	Nuestra ontología se enmarca en la definición propuesta por el informe estadístico de 2022 publicado por el Ministerio de Educación, Cultura y Deporte, donde se proporcionan indicadores estadísticos para estimar las dimensiones y características de las infraestructuras en España. En el documento, se define instalación deportiva como: 'Instalaciones destinadas al
+deporte que incluyen uno o varios espacios
+deportivos donde puede desarrollarse la actividad
+físico-deportiva.'.
 	
 	\subsection{Lenguaje de la Implementación}
 	La ontología sera implementada en OWL utilizando .
@@ -212,9 +248,17 @@
 	\section{Patrones en la ontología}
 	% Search for some ontology design patterns in the ontology design pattern portal that could be reused in your development.
 	
-	A la hora de diseñar nuestra ontología, de entre los patrones de diseño ya existentes vimos quealgunos de ellos eran aplicables a nuestro caso de instalaciones deportivas. Concretamente, lospatrones que hemos implementado han sido el de “Servicios ofrecidos” y el de “Normas”.
+	A la hora de diseñar nuestra ontología, de entre los patrones de diseño ya existentes vimos que
+algunos de ellos eran aplicables a nuestro caso de instalaciones deportivas. Concretamente, los
+patrones que hemos implementado han sido el de “Servicios ofrecidos” y el de “Normas”.
 	
-	Para el diseño de los servicios ofrecidos por la organización en una instalación deportiva, sereutilizó el patrón de una relación N-aria según lo visto en clase. Este patrón se utiliza pararepresentar una relación N-aria en el que todos los elementos tienen la misma importancia. Pararepresentar esta relación N-aria se crea una clase, en nuestra ontología la clase ServicioOfrecido,a la que asociar todos los atributos de la relación. Este patrón se utilizará para representar losservicios que una organización ofrece que se realizaran en una instalación deportiva en un horariodeterminado y por un precio indicado.
+	Para el diseño de los servicios ofrecidos por la organización en una instalación deportiva, se
+reutilizó el patrón de una relación N-aria según lo visto en clase. Este patrón se utiliza para
+representar una relación N-aria en el que todos los elementos tienen la misma importancia. Para
+representar esta relación N-aria se crea una clase, en nuestra ontología la clase ServicioOfrecido,
+a la que asociar todos los atributos de la relación. Este patrón se utilizará para representar los
+servicios que una organización ofrece que se realizaran en una instalación deportiva en un horario
+determinado y por un precio indicado.
 	
 	\begin{figure}[H]
 		\centering
@@ -222,7 +266,10 @@
 		\caption{Esquema del patrón de servicios.}
 	\end{figure}
 
-	El patrón de normas está destinado a la definición de una serie de reglas y normas que aplican ala organización. El patrón de reglas se expresa mediante ODRL (Open Digital Rights Language),y se definen mediante la estructura:	“Una \textit{acción} es \textit{permitida/obligatoria/prohibida} de ser realizada por una \textit{parte} sobre el \textit{activo},siempre que se mantengan las \textit{restricciones}”.
+	El patrón de normas está destinado a la definición de una serie de reglas y normas que aplican a
+la organización. El patrón de reglas se expresa mediante ODRL (Open Digital Rights Language),
+y se definen mediante la estructura:	“Una \textit{acción} es \textit{permitida/obligatoria/prohibida} de ser realizada por una \textit{parte} sobre el \textit{activo},
+siempre que se mantengan las \textit{restricciones}”.
 	
 	\begin{figure}[H]
 		\centering
@@ -230,7 +277,8 @@
 		\caption{Esquema del patrón de servicios.}
 	\end{figure}
 	
-	En la sección de modelado conceptual de la ontología se entrará más en detalle sobre las clases yrelaciones de estos patrones.
+	En la sección de modelado conceptual de la ontología se entrará más en detalle sobre las clases y
+relaciones de estos patrones.
 	
 	\section{Modelo conceptual}
 	% Build a conceptual model that integrates outcomes from the previous sections (c,d,e). This is the most important part of the work you are doing. Try to use:
@@ -239,21 +287,45 @@
 	%   iii. Select some Ontology Design Patterns (events, sequence, etc.)
 	%   iv. Build the conceptual model of your ontology by integrating the above sources. The conceptual model should have at least 40 concepts, several subclass-of relations, disjoint, part-of (if needed), and ad-hoc relations.
 	
-	Tras el proceso de búsqueda de recursos ontológicos y no ontológicos para su reutilizacióncomo se ha explicado en los apartados anteriores así como la selección de patrones de diseño deontologías, se desarrolló el modelo conceptual de la ontología. Esta es una de las fases másimportantes en la construcción de ontologías, y en este apartado se describirán lasclases y relaciones que se han implementado y que en los siguientes apartados se formalizarán acódigo OWL. Debido a la amplitud del modelo y para un mejor entendimiento se procederá aexplicar los distintos módulos del modelo por separado.
+	Tras el proceso de búsqueda de recursos ontológicos y no ontológicos para su reutilización
+como se ha explicado en los apartados anteriores así como la selección de patrones de diseño de
+ontologías, se desarrolló el modelo conceptual de la ontología. Esta es una de las fases más
+importantes en la construcción de ontologías, y en este apartado se describirán las
+clases y relaciones que se han implementado y que en los siguientes apartados se formalizarán a
+código OWL. Debido a la amplitud del modelo y para un mejor entendimiento se procederá a
+explicar los distintos módulos del modelo por separado.
 	
-	Encontramos cuatro clases principales que serán el núcleo de nuestra ontología.Estas clases son \textbf{Organización}, \textbf{Instalación Deportiva}, \textbf{Servicio Ofrecido} y \textbf{Regla}.
+	Encontramos cuatro clases principales que serán el núcleo de nuestra ontología.
+Estas clases son \textbf{Organización}, \textbf{Instalación Deportiva}, \textbf{Servicio Ofrecido} y \textbf{Regla}.
 	
 	El diagrama completo de la ontología está disponible en el anexo.
 	
 	\subsection{Organización}
 	
-	En lo que a la organización respecta, reutilizando clases y relaciones de la ontología \textbf{org} hemoscreado el modelo que se puede observar en la figura a continuación. La forma de interpretar esta parte delmodelo es: “Una organización encargada de gestionar instalaciones deportivas establece acuerdosde membresía con sus trabajadores para que estos tengan un determinado rol dentro de laorganización”. Analizando el modelo con sus clases y relaciones tenemos:
+	En lo que a la organización respecta, reutilizando clases y relaciones de la ontología \textbf{org} hemos
+creado el modelo que se puede observar en la figura a continuación. La forma de interpretar esta parte del
+modelo es: “Una organización encargada de gestionar instalaciones deportivas establece acuerdos
+de membresía con sus trabajadores para que estos tengan un determinado rol dentro de la
+organización”. Analizando el modelo con sus clases y relaciones tenemos:
 	
 	\begin{itemize}
-		\item Una organización es SubClassOf de \textit{org:Organization}. Organización tiene comopropiedades el Nombre, Email y Número de teléfono, que son literales.
-		\item Una organización es la que gestiona una o más instalaciones deportivas, por lo que laclase Instalación Deportiva se relaciona con Organización mediante la relación\textit{managedBy}.
-		\item Una organización establece unos acuerdos de membresía con sus trabajadores para undeterminado rol (tal y como está definido en la ontología org) por lo que tenemos la clase\textit{org:Membership} que se relaciona con organización mediante la relación\textit{org:organization}, se relaciona con las clases de los trabajadores mediante la relación\textit{org:memberOf} y se relaciona con org:Role mediante la relación org:role. Al diseñar estasección hemos querido contemplar la posibilidad de que un trabajador de la organizacióntenga asignada la instalación o las instalaciones en las que trabaja por lo que hemos unido\textit{org:Membership} con Instalación Deportiva mediante la relación \textit{establecidaEn}.
-		\item Para determinar los tipos de trabajadores que hay en una organización hemos decididocrear una clase para cada uno de los tipos. Debido a la gran cantidad de clases detrabajadores que existen para su simplificación en nuestro modelo hemos ejemplificadolas clases Monitor, Limpiador, y Entrenador, todas ellas \textit{SubClassOf} de \textit{foaf:Person}.
+		\item Una organización es SubClassOf de \textit{org:Organization}. Organización tiene como
+propiedades el Nombre, Email y Número de teléfono, que son literales.
+		\item Una organización es la que gestiona una o más instalaciones deportivas, por lo que la
+clase Instalación Deportiva se relaciona con Organización mediante la relación
+\textit{managedBy}.
+		\item Una organización establece unos acuerdos de membresía con sus trabajadores para un
+determinado rol (tal y como está definido en la ontología org) por lo que tenemos la clase
+\textit{org:Membership} que se relaciona con organización mediante la relación
+\textit{org:organization}, se relaciona con las clases de los trabajadores mediante la relación
+\textit{org:memberOf} y se relaciona con org:Role mediante la relación org:role. Al diseñar esta
+sección hemos querido contemplar la posibilidad de que un trabajador de la organización
+tenga asignada la instalación o las instalaciones en las que trabaja por lo que hemos unido
+\textit{org:Membership} con Instalación Deportiva mediante la relación \textit{establecidaEn}.
+		\item Para determinar los tipos de trabajadores que hay en una organización hemos decidido
+crear una clase para cada uno de los tipos. Debido a la gran cantidad de clases de
+trabajadores que existen para su simplificación en nuestro modelo hemos ejemplificado
+las clases Monitor, Limpiador, y Entrenador, todas ellas \textit{SubClassOf} de \textit{foaf:Person}.
 	\end{itemize}
 
 	\begin{figure}[H]
@@ -264,16 +336,30 @@
 	
 	\subsection{Instalación Deportiva}
 	
-	Para la construcción de la taxonomía de las instalaciones deportivas se ha hecho uso del recursono ontológico explicado en apartados anteriores, y mediante un T-Box se ha modelado a nuestraontología.
+	Para la construcción de la taxonomía de las instalaciones deportivas se ha hecho uso del recurso
+no ontológico explicado en apartados anteriores, y mediante un T-Box se ha modelado a nuestra
+ontología.
 	
 	\begin{itemize}
-		\item Una Instalación Deportiva puede estar compuesta por diferentes partes (\textit{partOf}):Espacio Deportivo (que puede ser al aire libre o cerrado), Espacio Complementario,Espacio Auxiliar. Estas partes son disjuntas unas de otras. Un EspacioComplementario va asociado a un Espacio Deportivo.
-		\item Cada una de estas partes tiene su propia taxonomía tal y como se define en el recurso no	ontológico y se muestra las diferentes subclases y las clases que son disjuntas (recuadrosrosas) en el esquema de la Figura X2.
-		\item La clase Instalación Deportiva cuenta con propiedades como número de teléfono e email queserán literales y no clases.
-		\item Una instalación deportiva se geolocaliza en un \textit{geo:Point} mediante la relación\textit{hasGeopoint}. A su vez expresamos su localización mediante una dirección, para ellorelacionamos Instalación Deportiva con la clase \textit{vcard:Address} mediante la relación\textit{vcard:hasAddress}.
-		\item La clase Deporte se relaciona con un Espacio Deportivo mediante la relación\textit{esPracticadoEn}.
-		\item La clase Cliente es \textit{subClassOf} \textit{foaf:Person}, y Cliente practica uno o varios Deportes.En el siguiente modulo también se verá que Cliente consume ServicioOfrecido
-		\item Entrenador y Monitor (definidos en el apartado de organización) tienen una relación	con Deporte que es \textit{enseña}.
+		\item Una Instalación Deportiva puede estar compuesta por diferentes partes (\textit{partOf}):
+Espacio Deportivo (que puede ser al aire libre o cerrado), Espacio Complementario,
+Espacio Auxiliar. Estas partes son disjuntas unas de otras. Un Espacio
+Complementario va asociado a un Espacio Deportivo.
+		\item Cada una de estas partes tiene su propia taxonomía tal y como se define en el recurso no
+	ontológico y se muestra las diferentes subclases y las clases que son disjuntas (recuadros
+rosas) en el esquema de la Figura X2.
+		\item La clase Instalación Deportiva cuenta con propiedades como número de teléfono e email que
+serán literales y no clases.
+		\item Una instalación deportiva se geolocaliza en un \textit{geo:Point} mediante la relación
+\textit{hasGeopoint}. A su vez expresamos su localización mediante una dirección, para ello
+relacionamos Instalación Deportiva con la clase \textit{vcard:Address} mediante la relación
+\textit{vcard:hasAddress}.
+		\item La clase Deporte se relaciona con un Espacio Deportivo mediante la relación
+\textit{esPracticadoEn}.
+		\item La clase Cliente es \textit{subClassOf} \textit{foaf:Person}, y Cliente practica uno o varios Deportes.
+En el siguiente modulo también se verá que Cliente consume ServicioOfrecido
+		\item Entrenador y Monitor (definidos en el apartado de organización) tienen una relación
+	con Deporte que es \textit{enseña}.
 	\end{itemize}
 
 	\begin{figure}[H]
@@ -287,10 +373,15 @@
 	Esta clase ServicioOfrecido tendrá asociadas varias clases mediante diferente relaciones:
 	
 	\begin{itemize}
-		\item Servicio, que tiene dos subclases disjuntas Individual y Bono de servicios. De estas dos	clases habría más subclases, para ejemplificar hemos incluido el alquiler de una pista de	pádel o un bono de 10 clases de zumba
-		\item Instalación Deportiva en la que se ofrece dicho servicio. Por ejemplo, una pista de pádel,o la sala de musculación.
-		\item time:DurationDescription y time:GeneralDateTimeDescription, que indicaran laduración y/o la fecha en la que se ofrece el servicio. Por ejemplo, jueves 3 de noviembre	del 2022 de 18:00 a 19:00, o Todos los lunes y miércoles de febrero de 15:00 a 16:00.
-		\item PriceSpecification, teniendo asociada como propiedades una cantidad y una moneda depago. Por ejemplo 59,99 euros.
+		\item Servicio, que tiene dos subclases disjuntas Individual y Bono de servicios. De estas dos
+	clases habría más subclases, para ejemplificar hemos incluido el alquiler de una pista de
+	pádel o un bono de 10 clases de zumba
+		\item Instalación Deportiva en la que se ofrece dicho servicio. Por ejemplo, una pista de pádel,
+o la sala de musculación.
+		\item time:DurationDescription y time:GeneralDateTimeDescription, que indicaran la
+duración y/o la fecha en la que se ofrece el servicio. Por ejemplo, jueves 3 de noviembre	del 2022 de 18:00 a 19:00, o Todos los lunes y miércoles de febrero de 15:00 a 16:00.
+		\item PriceSpecification, teniendo asociada como propiedades una cantidad y una moneda de
+pago. Por ejemplo 59,99 euros.
 	\end{itemize}
 	
 	\begin{figure}[H]
@@ -308,10 +399,19 @@
 	que serán subclass of de las siguientes entidades de la ontología ODRL:
 	
 	\begin{itemize}
-		\item \textbf{odrl:Constraint}. Para cada norma hay una subclass de \textit{odrl:Constraint} y puede ser unlugar físico (piscina, pista de tenis, gimnasio) o un marco temporal (los sábados, el día 1de cada mes, todos los días de 9:00 a 10:00) en el que se aplica la norma.
-		\item \textbf{odrl:Asset}. Para cada norma tendremos una clase \textit{subclass of} \textit{odrl:Asset} que establece elactivo o recurso que es sujeto de la norma. Este activo puede ser cualquier forma derecurso identificable, como datos/información, servicios o elementos físicos. En nuestraontología hemos puesto el ejemplo de gorro de baño.
-		\item \textbf{odrl:Action}. Para cada norma tendremos una clase \textit{subclass of} \textit{odrl:Action} que indicarála acción realizada sobre el activo. En nuestro modelo encontramos la clase Llevar puestopara el caso de gorro de baño.
-		\item \textbf{odrl:Party} Tendremos una \textit{subclass} de esta clase de ODRL para cada regla, y definirá aque parte de las personas se le aplica dicha regla. Puede ser por ejemplo una regla queaplique a todos los usuarios, o una regla que aplique solo a trabajadores.
+		\item \textbf{odrl:Constraint}. Para cada norma hay una subclass de \textit{odrl:Constraint} y puede ser un
+lugar físico (piscina, pista de tenis, gimnasio) o un marco temporal (los sábados, el día 1
+de cada mes, todos los días de 9:00 a 10:00) en el que se aplica la norma.
+		\item \textbf{odrl:Asset}. Para cada norma tendremos una clase \textit{subclass of} \textit{odrl:Asset} que establece el
+activo o recurso que es sujeto de la norma. Este activo puede ser cualquier forma de
+recurso identificable, como datos/información, servicios o elementos físicos. En nuestra
+ontología hemos puesto el ejemplo de gorro de baño.
+		\item \textbf{odrl:Action}. Para cada norma tendremos una clase \textit{subclass of} \textit{odrl:Action} que indicará
+la acción realizada sobre el activo. En nuestro modelo encontramos la clase Llevar puesto
+para el caso de gorro de baño.
+		\item \textbf{odrl:Party} Tendremos una \textit{subclass} de esta clase de ODRL para cada regla, y definirá a
+que parte de las personas se le aplica dicha regla. Puede ser por ejemplo una regla que
+aplique a todos los usuarios, o una regla que aplique solo a trabajadores.
 	\end{itemize}
 	
 	\begin{figure}[H]
@@ -357,7 +457,8 @@
 		
 	Hemos tenido cierta dificultad a la hora de crear la propiedad Part Of, ya que tiene varios dominios para un único rango (tanto los espacios deportivos, como los complementarios y auxiliares son part of de una instalación deportiva). Para evitar interferencias, hemos incluido los diferentes dominios con la condición OR. 
 	
-	De forma similar hemos añadido los Data Properties. Estos en lugar de apuntar a una entidad, apuntan a un literal, por lo que hemos tenido que especificar los tipos de datos para literales como la divisa, el precio... Un caso particular ha sido la propiedad hasCeiling (tiene techo), para definir los Espacios Deportivos. En este caso el literal era un booleano.\\
+	De forma similar hemos añadido los Data Properties. Estos en lugar de apuntar a una entidad, apuntan a un literal, por lo que hemos tenido que especificar los tipos de datos para literales como la divisa, el precio... Un caso particular ha sido la propiedad hasCeiling (tiene techo), para definir los Espacios Deportivos. En este caso el literal era un booleano.
+\\
 	
 	Finalmente, hemos completado las labels y comentarios de aquellas entidades que no han sido directamente importadas, asegurandonos de que estaban disponibles tanto en inglés como español. 
 	
@@ -404,12 +505,32 @@
 	
 	\section{Documentación de la ontología}
 	% Document the ontology with Widoco and use Ontoology if required
-	La documentación de la ontología fue generada utilizando la herramienta WIDOCO \cite{widoco}. Esta documentación está en un formato html, adjunto junto con este fichero.
-	
+	La documentación de la ontología fue generada utilizando la herramienta WIDOCO \cite{widoco}. Esta documentación está en un formato html, adjunto junto con este fichero, y su impresión en pdf puede verse en los anexos.
 	%\includepdf[pages=-]{include/documentation-widoco.pdf}
 	
 	\section{Conclusiones}
+	Durante todo el proceso de creación de nuestra ontología hemos podido aprender y tocar ciertasáreas de la ingeniería ontológica, nos hemos enfrentado a ciertos procesos de búsqueda yplanteamiento conceptual para la satisfacción de los requisitos planteados, y hemos tenido queresolver los problemas que iban surgiendo en las distintas etapas.
 	
+	Después de completar todas las secciones del trabajo y a modo de conclusión, nos gustaría
+	recapitular los conceptos y actividades relacionadas con el creación de ontologías que hemos
+	aprendido a lo largo del desarrollo de este trabajo:
+	\begin{itemize}
+		\item Seguimiento de la metodología NeOn para el desarrollo de ontologías.
+		\item Planteamiento de requisitos necesarios para nuestra ontología.
+		\item Búsqueda y selección de los recursos ontológicos para su posterior reutilización, ya seade ontologías enteras o extracción de módulos de estas.
+		\item Búsqueda de recursos no ontológicos para su posterior introducción en el modelo
+		conceptual mediante T-box.
+		\item Reutilización de patrones de diseño de ontologías, concretamente los patrones de
+		servicio y normas.
+		\item Modelado conceptual de la ontología con todos los elementos anteriores e
+		introduciendo clases y relaciones necesarias para completarlo y cubrir los requisitos.
+		\item Implementación y formalización en OWL con la herramienta Protege.
+		\item Evaluación de la ontología creada gracias al uso de herramientas como OOPS! para su
+		posterior corrección.
+		\item Documentación de la ontología gracias a WIDOCO.
+	\end{itemize}
+	En definitiva, ha sido un trabajo que ha tocado muchas áreas diferentes sirviendo así como
+	introducción al complejo mundo de las ontologías.
 	
 	
 	
@@ -460,6 +581,10 @@
 		\end{subfigure}
 		\caption{Diferentes resultados obtenidos de la evaluación con OOPS!}
 	\end{figure}
+	
+	%\subsection*{Documentación (español)}
+	%\includepdf[pages=-]{include/documentacion-es.pdf}
+	%\input{./include/portada.tex}
 	
 
 
