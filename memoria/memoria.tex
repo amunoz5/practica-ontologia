@@ -292,9 +292,10 @@ completarlas en el orden correcto dentro del plazo de entrega y así llevar un c
 	\begin{itemize}
 		\item Una organización es \textit{SubClassOf} de \textit{org:Organization}. Organización tiene como propiedades el \textit{Nombre}, \textit{Email} y \textit{Número de teléfono}, que son literales.
 		\item Una organización es la que gestiona una o más instalaciones deportivas, por lo que la clase \textit{Instalación Deportiva} se relaciona con \textit{Organización} mediante la relación \textit{managedBy}.
-		\item Una \textit{Organización} establece unos acuerdos de membresía con sus trabajadores para un determinado rol (tal y como está definido en la ontología \textbf{org}) por lo que tenemos la clase \textit{org:Membership} que se relaciona con \textit{Organización} mediante la relación \textit{org:organization}. Esta clase se relaciona con las clases de cada trabajador mediante la relación \textit{org:memberOf} y se relaciona con \textit{org:Role} mediante la relación \textit{org:role}.
 		
-		Al diseñar esta sección hemos querido contemplar la posibilidad de que un trabajador de la organización tenga asignada la instalación o las instalaciones en las que trabaja por lo que hemos unido \textit{org:Membership} con \textit{Instalación Deportiva} mediante la relación \textit{establecidaEn}.
+		\item Una organización establece unos acuerdos de membresía con sus trabajadores para un determinado rol (tal y como está definido en la ontología \textbf{org}). Por lo que tenemos la clase \textit{org:Membership} que define una relación n-aria que une la organización (clase \textit{Organización}) con el trabajador (clases \textit{Monitor}, \textit{Limpiador}, \textit{Entrenador}) y con el rol (clase \textit{org:Role}) de dicho trabajador, mediante las relaciones \textit{org:organization}, \textit{org:memberOf} y \textit{org:role} respectivamente (ver Figura). 
+		
+		Al diseñar esta sección hemos querido contemplar la posibilidad de que un trabajador de la organización tenga asignada la instalación o las instalaciones en las que trabaja por lo que hemos incluido también en esta relación n-aria la relación \textit{establecidaEn} que une \textit{org:Membership} con la clase \textit{Instalación deportiva}.
 		\item Para determinar los tipos de trabajadores que hay en una organización hemos decidido crear una clase para cada uno de los tipos. Debido a la gran cantidad de clases de trabajadores que existen, hemos indicado las clases Monitor, Limpiador y Entrenador como ejemplo, todas ellas \textit{SubClassOf} de \textit{foaf:Person}.
 	\end{itemize}
 
@@ -326,7 +327,7 @@ completarlas en el orden correcto dentro del plazo de entrega y así llevar un c
 		
 	\subsection{Servicio Ofrecido}
 	
-	La clase \textit{ServicioOfrecido} tiene asociadas varias clases mediante las relaciones indicadas.
+	Esta clase \textit{ServicioOfrecido} constituye una relación n-aria y tendrá asociadas varias clases mediante diferentes relaciones:
 	
 	\begin{itemize}
 		\item La clase \textit{Servicio}, que tiene dos subclases disjuntas \textit{Individual} y \textit{Bono de servicios}. De estas dos clases habría más subclases, para ejemplificar hemos incluido el alquiler de una pista de pádel o un bono de 10 clases de zumba.
@@ -425,7 +426,10 @@ completarlas en el orden correcto dentro del plazo de entrega y así llevar un c
 	%\includepdf[pages=-]{include/documentation-widoco.pdf}
 	
 	\section{Conclusiones}
-	Durante el proceso de creación de esta ontología, hemos podido aprender y tocar diversasáreas de la ingeniería ontológica, nos hemos enfrentado a procesos de búsqueda yplanteamiento conceptual para la satisfacción de los requisitos planteados, y hemos tenido queresolver los problemas que iban surgiendo en las distintas etapas.
+	Durante el proceso de creación de esta ontología, hemos podido aprender y tocar diversas
+áreas de la ingeniería ontológica, nos hemos enfrentado a procesos de búsqueda y
+planteamiento conceptual para la satisfacción de los requisitos planteados, y hemos tenido que
+resolver los problemas que iban surgiendo en las distintas etapas.
 	
 	Después de completar todas las secciones del trabajo y a modo de conclusión, nos gustaría
 	recapitular los conceptos y actividades relacionadas con el creación de ontologías que hemos
@@ -433,7 +437,8 @@ completarlas en el orden correcto dentro del plazo de entrega y así llevar un c
 	\begin{itemize}
 		\item Seguimiento de la metodología NeOn para el desarrollo de ontologías.
 		\item Planteamiento de requisitos necesarios para nuestra ontología.
-		\item Búsqueda y selección de los recursos ontológicos para su posterior reutilización, ya seade ontologías enteras o extracción de módulos de estas.
+		\item Búsqueda y selección de los recursos ontológicos para su posterior reutilización, ya sea
+de ontologías enteras o extracción de módulos de estas.
 		\item Búsqueda de recursos no ontológicos para su posterior introducción en el modelo
 		conceptual mediante T-box.
 		\item Reutilización de patrones de diseño de ontologías, concretamente los patrones de
@@ -445,7 +450,8 @@ completarlas en el orden correcto dentro del plazo de entrega y así llevar un c
 		posterior corrección.
 		\item Documentación de la ontología gracias a WIDOCO.
 	\end{itemize}
-	En definitiva, ha sido un trabajo que ha involucrado muchas áreas diferentes sirviendo así comointroducción al complejo mundo de las ontologías.
+	En definitiva, ha sido un trabajo que ha involucrado muchas áreas diferentes sirviendo así como
+introducción al complejo mundo de las ontologías.
 	
 \newpage
 	\section*{Bibliografía}
