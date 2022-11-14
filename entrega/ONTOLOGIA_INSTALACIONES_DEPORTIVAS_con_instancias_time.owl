@@ -7,7 +7,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:time="http://www.w3.org/2006/time#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:priceSpecification="https://schema.org/priceSpecification#">
     <owl:Ontology rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas">
         <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
     </owl:Ontology>
@@ -34,6 +36,21 @@
         <rdfs:label xml:lang="en">An EspacioComplementario (complementary space) is associated to an EspacioDeportivo (sports space)</rdfs:label>
         <rdfs:label xml:lang="es">Un EspacioComplementario está asociado a un EspacioDeportivo</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#hasTime -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2006/time#hasTime">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#InstalacionDeportiva"/>
+                    <rdf:Description rdf:about="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </rdf:Description>
     
 
 
@@ -368,6 +385,7 @@
 
     <owl:ObjectProperty rdf:about="https://schema.org/priceSpecification#partOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1193,6 +1211,72 @@ sameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P
         <rdfs:label xml:lang="es">Especificacion del precio</rdfs:label>
         <rdfs:label xml:lang="es">Price specification</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://schema.org/priceSpecification#Alquiler_pista_de_padel_1 -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/priceSpecification#Alquiler_pista_de_padel_1">
+        <rdf:type rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#Alquiler_de_pista_de_padel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/priceSpecification#ServicioOfrecido_Alquiler_Pista_Padel_1 -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/priceSpecification#ServicioOfrecido_Alquiler_Pista_Padel_1">
+        <rdf:type rdf:resource="http://w3id.org/def/muia/ing-onto/instalaciones-deportivas#ServicioOfrecido"/>
+        <time:hasTime rdf:resource="https://schema.org/priceSpecification#inicio_reserva"/>
+        <priceSpecification:hasService rdf:resource="https://schema.org/priceSpecification#Alquiler_pista_de_padel_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/priceSpecification#duracion_reserva -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/priceSpecification#duracion_reserva">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Duration"/>
+        <time:hasTemporalDuration rdf:resource="https://schema.org/priceSpecification#duracion_reserva"/>
+        <time:unitType rdf:resource="http://www.w3.org/2006/time#unitHour"/>
+        <time:numericDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</time:numericDuration>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/priceSpecification#final_reserva -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/priceSpecification#final_reserva">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:inXSDDateTimeStamp>2022-04-12T11:30:00+10:00</time:inXSDDateTimeStamp>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/priceSpecification#inicio_reserva -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/priceSpecification#inicio_reserva">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
+        <time:inXSDDateTimeStamp>2022-04-12T10:30:00+10:00</time:inXSDDateTimeStamp>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://schema.org/priceSpecification#intervalo_reservado -->
+
+    <owl:NamedIndividual rdf:about="https://schema.org/priceSpecification#intervalo_reservado">
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#ProperInterval"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
