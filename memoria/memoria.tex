@@ -83,9 +83,9 @@ siguientes escenarios:
 		\item \textbf{Escenario 4: La reutilización y reingeniería de los recursos ontológicos.}
 		Se llevan a cabo procesos de reutilización de recursos y se reorganizan los recursos ontológicos.
 		\item \textbf{Escenario 7: Reutilización de los patrones de diseño de ontologías (ODPs).}
-		\hl{Los desarrolladores de ontolog}ías acceden a repositorios de reutilización ODPs.
+		Los desarrolladores de ontologías acceden a repositorios de reutilización ODPs.
 		\item \textbf{Escenario 9: Localización de recursos ontológicos.}
-		\hl{Los desarrolladores de ontolog}ías adaptan una ontología a otras lenguas y la cultura las comunidades, obteniendo así una ontología multilingüe.
+		Los desarrolladores de ontologías adaptan una ontología a otras lenguas y la cultura las comunidades, obteniendo así una ontología multilingüe.
 	\end{itemize}
 	
 	Otro punto importante dentro de la metodología NeOn es el glosario de actividades \cite{oeg-glossary}. Durante todo el proceso de construcción de
@@ -242,7 +242,7 @@ completarlas en el orden correcto dentro del plazo de entrega y así llevar un c
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.7\textwidth]{include/tbox.jpg}
+		\includegraphics[width=0.65\textwidth]{include/tbox.png}
 		\caption{Sección correspondiente a los recursos no ontológicos en la ontología.}
 	\end{figure}
 	
@@ -257,7 +257,7 @@ completarlas en el orden correcto dentro del plazo de entrega y así llevar un c
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.6\textwidth]{include/patron_servicios.png}
+		\includegraphics[width=0.65\textwidth]{include/patron_servicios.png}
 		\caption{Esquema del patrón de servicios.}
 	\end{figure}
 
@@ -265,7 +265,7 @@ completarlas en el orden correcto dentro del plazo de entrega y así llevar un c
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.5\textwidth]{include/patron_reglas.png}
+		\includegraphics[width=0.4\textwidth]{include/patron_reglas.png}
 		\caption{Esquema del patrón de servicios.}
 	\end{figure}
 	
@@ -301,7 +301,7 @@ completarlas en el orden correcto dentro del plazo de entrega y así llevar un c
 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth]{include/org.jpg}
+		\includegraphics[width=0.8\textwidth]{include/org.png}
 		\caption{Esquema de las principales clases relacionadas con \textbf{Organización}.}
 	\end{figure}
 	
@@ -321,7 +321,7 @@ completarlas en el orden correcto dentro del plazo de entrega y así llevar un c
 
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth]{include/tbox.jpg}
+		\includegraphics[width=\textwidth]{include/tbox.png}
 		\caption{Esquema de las principales clases relacionadas con \textbf{Instalación Deportiva}.}
 	\end{figure}
 		
@@ -338,7 +338,7 @@ completarlas en el orden correcto dentro del plazo de entrega y así llevar un c
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth]{include/pattern.jpg}
+		\includegraphics[width=\textwidth]{include/servicio.png}
 		\caption{Esquema de las principales clases relacionadas con \textbf{Servicio Ofrecido}.}
 	\end{figure}
 	
@@ -356,7 +356,7 @@ completarlas en el orden correcto dentro del plazo de entrega y así llevar un c
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth]{include/reglas.jpg}
+		\includegraphics[width=\textwidth]{include/reglas.png}
 		\caption{Esquema de las principales clases relacionadas con \textbf{Regla}.}
 	\end{figure}
 	
@@ -367,14 +367,15 @@ completarlas en el orden correcto dentro del plazo de entrega y así llevar un c
 	
 	El primer paso fue incluir todas las clases de la ontología creadas mediante el T-Box.
 	
-	Después, se crearon las clases obtenidas de la reutilización de las ontologías nombradas en el apartado 5. Para ello, se importaron las ontologías con su URI y se movieron los axiomas necesarios a nuestra ontología. En general, la metodología para importar las ontologías fue idéntica para todas: primero importar la ontología al completo con su URI, moviendo los axiomas necesarios, y después eliminar el resto. La única excepción fue la ontología \textbf{time}. Esta fue importada al completo, ya que utilizábamos la totalidad de sus entidades, como hemos explicado en apartados anteriores. De forma general, las relaciones que hemos utilizado con la ontología Time han sido que un Servicio Ofrecido y una Instalación Deportiva tienen (hasTime) una Entidad Temporal (Time Entity). Esta entidad temporal puede tomar forma de Instante (el inicio de una clase, la hora de apertura de la instalación) o de intervalo (el intervalo temporal que dura un alquiler de pista, el horario de la instaalción...)Nos hemos dado cuenta al importar la ontología, que muchas de las propiedades estaban incompletas: les faltaba el rango o el dominio. Hemos optado por mantenerla como estaba, ya que muchos de estos problemas se debían a términos deprecados, y no hemos encontrado una versión más reciente de la ontología. Para ejemplificar el uso de esta ontología, hemos creado una serie de instancias que ejemplifican un posible caso:
+	Después, se crearon las clases obtenidas de la reutilización de las ontologías nombradas en el apartado 5. Para ello, se importaron las ontologías con su URI y se movieron los axiomas necesarios a nuestra ontología. En general, la metodología para importar las ontologías fue idéntica para todas: primero importar la ontología al completo con su URI, moviendo los axiomas necesarios, y después eliminar el resto. La única excepción fue la ontología \textbf{time}. Esta fue importada al completo, ya que utilizábamos la totalidad de sus entidades, como hemos explicado en apartados anteriores. 
+	
+	De forma general, las relaciones utilizadas en relación con la ontología \textbf{time} han sido que un \textit{Servicio Ofrecido} y una \textit{Instalación Deportiva} tienen (\textit{hasTime}) una entidad temporal (\textit{Time Entity}). Esta entidad temporal puede tomar forma de instante (el inicio de una clase, la hora de apertura de la instalación, etc.) o de intervalo (el intervalo temporal que dura un alquiler de pista, el horario de la instalación, etc.). Al importar la ontología nos dimos cuenta de que muchas de las propiedades estaban incompletas, les faltaba el rango o el dominio. Optamos por mantener estas propiedades como estaban, ya que muchos de estos problemas se debían a términos deprecados, y no habíamos encontrado una versión más reciente de la ontología. Como ejemplo el uso de esta ontología, hemos creado una serie de instancias que ejemplifican un posible caso de uso:
 	\begin{itemize}
-	    \item Una instancia de un Servicio Ofrecido que tiene asociada (hasTime) un intervalo temporal (intervalo\_reserva)
-	    \item Una instancia de Proper Interval (intervalo\_reserva), que tiene como inicio (has Beggining) la instancia de inicio\_reserva, y como final (hasEnd), la instancia de final\_reserva.
-	    \item Una instancia de un Time Instant (inicio\_reserva) que tiene una relación de hasTimeStamp con un literal que representa la hora de comienzo de la reserva de la pista.
-	    \item Una instancia de un Time Instant (final\_reserva) que tiene una relación de hasTimeStamp con un literal que representa la hora de comienzo de la reserva de la pista.
-	    \item Una instancia de Time Duration, que es propiedad de (intervalo\_reserva) y tiene una unidad y un número asociado. 
-	    
+	    \item Una instancia de un \textit{Servicio Ofrecido} que tiene asociada (\textit{hasTime}) un intervalo temporal (\textit{intervalo\_reserva})
+	    \item Una instancia de \textit{Proper Interval} (\textit{intervalo\_reserva}), que tiene como inicio (\textit{hasBeggining}) la instancia de \textit{inicio\_reserva}, y como final (\textit{hasEnd}), la instancia de \textit{final\_reserva}.
+	    \item Una instancia de un \textit{Time Instant} (\textit{inicio\_reserva}) que tiene una relación de \textit{hasTimeStamp} con un literal que representa la hora de comienzo de la reserva de la pista.
+	    \item Una instancia de un \textit{Time Instant} (\textit{final\_reserva}) que tiene una relación de \textit{hasTimeStamp} con un literal que representa la hora de comienzo de la reserva de la pista.
+	    \item Una instancia de \textit{Time Duration}, que es propiedad de (\textit{intervalo\_reserva}) y tiene una unidad y un número asociado. 
 	\end{itemize}
 	
 	Una vez importadas las clases reutilizadas, definimos aquellas clases necesarias para completar nuestro modelo, que no se encontraban ni en el T-Box ni en las ontologías de alto nivel, como por ejemplo la clase Monitor, Entrenador, Pista de Baloncesto, etc.\\
@@ -491,19 +492,19 @@ introducción al complejo mundo de las ontologías.
 	
 		\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.85\textwidth]{include/diagrama_modelo_completo.png}
+		\includegraphics[height=0.99\textheight]{include/diagrama_modelo_completo.png}
 		\caption{Diagrama completo del modelado de la ontología.}
 	\end{figure}
 	
 	\begin{figure}[H]
 		\begin{subfigure}{.5\textwidth}
 			\centering
-			\includegraphics[height=\textheight]{include/eval_inicial_oops.png}
+			\includegraphics[height=0.99\textheight]{include/eval_inicial_oops.png}
 			\caption{Resultados iniciales de la evaluación con OOPS! }
 		\end{subfigure}
 		\begin{subfigure}{.5\textwidth}
 			\centering
-			\includegraphics[height=\textheight]{include/eval_final_oops.png}
+			\includegraphics[height=0.99\textheight]{include/eval_final_oops.png}
 			\caption{Resultados finales de la evaluación con OOPS!}
 		\end{subfigure}
 		\caption{Diferentes resultados obtenidos de la evaluación con OOPS!}
